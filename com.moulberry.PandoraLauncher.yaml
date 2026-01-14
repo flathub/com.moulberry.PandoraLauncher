@@ -1,8 +1,11 @@
 app-id: com.moulberry.PandoraLauncher
 runtime: org.freedesktop.Platform
-runtime-version: &rt-ver "25.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 command: PandoraLauncher-Linux
+
+rename-desktop-file: PandoraLauncher-Linux.desktop
+rename-icon: pandora
 
 finish-args:
 - --socket=pulseaudio
@@ -10,7 +13,7 @@ finish-args:
 - --socket=wayland
 - --share=network
 - --device=dri # accelerating them gfx
-- --share=ipc # ??? is this necessairy? 
+- --share=ipc # x11 support
 # i would like to Nominate Moulberry for the XDG good citizen award, no need for
 # hacky stuff and --filesystem stuffs lol
 
@@ -19,18 +22,19 @@ modules: # i have to say, Moulberry, thank you for making this app so small and
 - name: PandoraLauncher
   buildsystem: simple
   build-commands:
-  - 'install -D com.moulberry.PandoraLauncher.svg -t /app/share/icons/hicolor/scalable/apps/'
-  - 'install -D com.moulberry.PandoraLauncher.desktop -t /app/share/applications/'
+  - bsdtar -xf pandora.deb 'data.tar.gz' | bsdtar -xf -
+  - tar xvf data.tar.gz
+  - 'install -D pandora.svg -t /app/share/icons/hicolor/scalable/apps/'
+  - 'install -D usr/share/applications/PandoraLauncher-Linux.desktop -t /app/share/applications/'
   - 'install -D com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo/'
-  - 'install -Dm755 PandoraLauncher-Linux -t /app/bin'
+  - 'install -Dm755 usr/bin/PandoraLauncher-Linux -t /app/bin'
   sources:
-  - type: file
-    dest-filename: PandoraLauncher-Linux
-    url: https://github.com/Moulberry/PandoraLauncher/releases/download/v2.5.0/PandoraLauncher-Linux-2.5.0-x86_64
-    sha256: cd7bb7f10082bdd05b432c833514c0b7f6e4f374cfa0f41446c7e53a7d8c3cfb
-  - type: file
-    path: com.moulberry.PandoraLauncher.svg
-  - type: file
+  - type: file # TODO: remove when flatpak-cargo-generator finally works
+    dest-filename: pandora.deb
+    url: https://github.com/Moulberry/PandoraLauncher/releases/download/v2.5.0/PandoraLauncher-Linux_2.5.0_amd64.deb
+    sha256: aafd932872e56abb45b7041d01bb77ba49b473de114eed1cf545a1a67598ee82
+  - type: file # not using the 32x32 #TODO: remove when upstream includes icon in deb or switch to source
+    url: https://github.com/Moulberry/PandoraLauncher/raw/refs/heads/master/assets/icons/pandora.svg
+    sha256: 08885122e050e486023682c103245f03f589afc6c47925ebae29c9c677519d89
+  - type: file # TODO: remove when included in upstream
     path: com.moulberry.PandoraLauncher.metainfo.xml
-  - type: file
-    path: com.moulberry.PandoraLauncher.desktop
