@@ -1,8 +1,0 @@
-[Desktop Entry]
-Categories=
-Exec=PandoraLauncher-Linux 
-Icon=com.moulberry.PandoraLauncher
-Name=Pandora Launcher
-Terminal=false
-Type=Application
-X-Flatpak-RenamedFrom=PandoraLauncher-Linux.desktop;
