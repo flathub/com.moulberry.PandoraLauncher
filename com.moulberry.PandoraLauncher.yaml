@@ -4,9 +4,6 @@ runtime-version: &rt-ver "25.08"
 sdk: org.freedesktop.Sdk
 command: PandoraLauncher-Linux
 
-rename-desktop-file: PandoraLauncher-Linux.desktop
-rename-icon: pandora
-
 finish-args:
 - --socket=pulseaudio
 - --socket=fallback-x11
@@ -22,19 +19,18 @@ modules: # i have to say, Moulberry, thank you for making this app so small and
 - name: PandoraLauncher
   buildsystem: simple
   build-commands:
-  - bsdtar -xf 1.deb 'data.tar.gz' | bsdtar -xf -
-  - tar xvf data.tar.gz
-  - 'install -D pandora.svg -t /app/share/icons/hicolor/scalable/apps/'
-  - 'install -D usr/share/applications/PandoraLauncher-Linux.desktop -t /app/share/applications/'
+  - 'install -D com.moulberry.PandoraLauncher.svg -t /app/share/icons/hicolor/scalable/apps/'
+  - 'install -D com.moulberry.PandoraLauncher.desktop -t /app/share/applications/'
   - 'install -D com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo/'
-  - 'install -Dm755 usr/bin/PandoraLauncher-Linux -t /app/bin'
+  - 'install -Dm755 PandoraLauncher-Linux -t /app/bin'
   sources:
   - type: file
-    dest-filename: 1.deb
-    url: https://github.com/Moulberry/PandoraLauncher/releases/download/v2.5.0/PandoraLauncher-Linux_2.5.0_amd64.deb
-    sha256: aafd932872e56abb45b7041d01bb77ba49b473de114eed1cf545a1a67598ee82
-  - type: file # not using the 32x32 icon 😭
-    url: https://github.com/Moulberry/PandoraLauncher/raw/refs/heads/master/assets/icons/pandora.svg
-    sha256: 08885122e050e486023682c103245f03f589afc6c47925ebae29c9c677519d89
+    dest-filename: PandoraLauncher-Linux
+    url: https://github.com/Moulberry/PandoraLauncher/releases/download/v2.5.0/PandoraLauncher-Linux-2.5.0-x86_64
+    sha256: cd7bb7f10082bdd05b432c833514c0b7f6e4f374cfa0f41446c7e53a7d8c3cfb
+  - type: file
+    path: com.moulberry.PandoraLauncher.svg
   - type: file
     path: com.moulberry.PandoraLauncher.metainfo.xml
+  - type: file
+    path: com.moulberry.PandoraLauncher.desktop
