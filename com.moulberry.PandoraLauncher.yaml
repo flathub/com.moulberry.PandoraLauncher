@@ -34,7 +34,7 @@ modules: # i have to say, Moulberry, thank you for making this app so small and
     url: https://github.com/Moulberry/PandoraLauncher/releases/download/v2.5.0/PandoraLauncher-Linux_2.5.0_amd64.deb
     sha256: aafd932872e56abb45b7041d01bb77ba49b473de114eed1cf545a1a67598ee82
   - type: file # not using the 32x32 #TODO: remove when upstream includes icon in deb or switch to source
-    url: https://github.com/Moulberry/PandoraLauncher/raw/refs/heads/master/assets/icons/pandora.svg
+    url: https://raw.githubusercontent.com/Moulberry/PandoraLauncher/ae169d3b98ff131c4660e12c2869cf39cef20f1e/assets/icons/pandora.svg
     sha256: 08885122e050e486023682c103245f03f589afc6c47925ebae29c9c677519d89
   - type: file # TODO: remove when included in upstream
     path: com.moulberry.PandoraLauncher.metainfo.xml
