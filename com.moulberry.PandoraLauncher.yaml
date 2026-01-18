@@ -24,6 +24,8 @@ modules: # i have to say, Moulberry, thank you for making this app so small and
   build-commands:
   - bsdtar -xf pandora.deb 'data.tar.gz' | bsdtar -xf -
   - tar xvf data.tar.gz
+  - 'desktop-file-edit usr/share/applications/PandoraLauncher-Linux.desktop --set-key="Categories" --set-value="Game;Java"'
+  - 'desktop-file-edit usr/share/applications/PandoraLauncher-Linux.desktop --set-key="Keywords" --set-value="Games;Minecraft;ModManager;Launcher;Rust"'
   - 'install -D pandora.svg -t /app/share/icons/hicolor/scalable/apps/'
   - 'install -D usr/share/applications/PandoraLauncher-Linux.desktop -t /app/share/applications/'
   - 'install -D com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo/'
