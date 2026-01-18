@@ -1,5 +1,7 @@
 #!/bin/bash
 set -x
+zed_override=7ce845210d3af82a57a7518e0abe8c167d60cc6a
+sha_to_override=e1a09e290c48fc02d07aaf2150856d77996414df
 pandora_version=v2.5.0
 cargo_gen_override=
 
@@ -22,6 +24,7 @@ git_routine() {
 }
 
 cargo_gen() {
+  sed -i "s/$sha_to_override/$zed_override/g" generated/.temp/pandora/Cargo.lock
   "$cargo_gen_override" -o generated/rust-sources.yaml --yaml generated/.temp/pandora/Cargo.lock
 }
 
