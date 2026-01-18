@@ -14,8 +14,6 @@ finish-args:
 - --share=network
 - --device=dri # accelerating them gfx
 - --share=ipc # x11 support
-# i would like to Nominate Moulberry for the XDG good citizen award, no need for
-# hacky stuff and --filesystem stuffs lol
 
 modules: # i have to say, Moulberry, thank you for making this app so small and
 # self contained, thank you ^w^
