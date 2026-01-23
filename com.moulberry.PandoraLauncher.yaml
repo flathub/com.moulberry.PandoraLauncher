@@ -2,11 +2,9 @@ app-id: com.moulberry.PandoraLauncher
 runtime: org.freedesktop.Platform
 runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+- org.freedesktop.Sdk.Extension.rust-stable
 command: PandoraLauncher-Linux
-
-rename-desktop-file: PandoraLauncher-Linux.desktop
-rename-icon: pandora
-
 finish-args:
 - --socket=pulseaudio
 - --socket=fallback-x11
@@ -15,26 +13,21 @@ finish-args:
 - --device=dri # accelerating them gfx
 - --share=ipc # x11 support
 
-modules: # i have to say, Moulberry, thank you for making this app so small and
-# self contained, thank you ^w^
+modules:
 - name: PandoraLauncher
   buildsystem: simple
+  build-options:
+    append-path: /usr/lib/sdk/rust-stable/bin
+    env:
+      CARGO_HOME: /run/build/PandoraLauncher/cargo
+      CARGO_NET_OFFLINE: 'true'
   build-commands:
-  - bsdtar -xf pandora.deb 'data.tar.gz' | bsdtar -xf -
-  - tar xvf data.tar.gz
-  - 'desktop-file-edit usr/share/applications/PandoraLauncher-Linux.desktop --set-key="Categories" --set-value="Game;Java"'
-  - 'desktop-file-edit usr/share/applications/PandoraLauncher-Linux.desktop --set-key="Keywords" --set-value="Games;Minecraft;ModManager;Launcher;Rust"'
-  - 'install -D pandora.svg -t /app/share/icons/hicolor/scalable/apps/'
-  - 'install -D usr/share/applications/PandoraLauncher-Linux.desktop -t /app/share/applications/'
-  - 'install -D com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo/'
-  - 'install -Dm755 usr/bin/PandoraLauncher-Linux -t /app/bin'
+  - cargo --offline fetch --manifest-path Cargo.toml --verbose
+  - cargo build --offline --release --all-features
+  - exit 127;
   sources:
-  - type: file # TODO: remove when flatpak-cargo-generator finally works
-    dest-filename: pandora.deb
-    url: https://github.com/Moulberry/PandoraLauncher/releases/download/v2.5.0/PandoraLauncher-Linux_2.5.0_amd64.deb
-    sha256: aafd932872e56abb45b7041d01bb77ba49b473de114eed1cf545a1a67598ee82
-  - type: file # not using the 32x32 #TODO: remove when upstream includes icon in deb or switch to source
-    url: https://raw.githubusercontent.com/Moulberry/PandoraLauncher/ae169d3b98ff131c4660e12c2869cf39cef20f1e/assets/icons/pandora.svg
-    sha256: 08885122e050e486023682c103245f03f589afc6c47925ebae29c9c677519d89
-  - type: file # TODO: remove when included in upstream
-    path: com.moulberry.PandoraLauncher.metainfo.xml
+  - type: git
+    url: https://github.com/Moulberry/PandoraLauncher
+    branch: master
+    commit: 933ab6295da0d6b27166a3436bb19543cffc9e5c
+  - generated/cargo-sources.yaml
