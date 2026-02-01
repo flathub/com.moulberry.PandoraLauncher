@@ -4,7 +4,7 @@ runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
-command: PandoraLauncher-Linux
+command: pandora_launcher
 finish-args:
 - --socket=pulseaudio
 - --socket=fallback-x11
@@ -24,13 +24,14 @@ modules:
   build-commands:
   - install -D package/flatpak/com.moulberry.PandoraLauncher.desktop -t /app/share/applications/
   - install -D package/flatpak/com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo
-  - cp file assets/icons/pandora.svg com.moulberry.PandoraLauncher.svg
+  - cp assets/icons/pandora.svg com.moulberry.PandoraLauncher.svg
   - install -D com.moulberry.PandoraLauncher.svg -t /app/share/icons/hicolor/scalable/apps/
-  - exit 127; # temporarily break building until we get the ability to make a working cargo-sources
   - cargo --offline fetch --manifest-path Cargo.toml --verbose
-  - cargo build --offline --release --all-features
+  - cargo build --offline --release
+  - install -Dm755 $(find target/ -iname 'pandora_launcher') -t /app/bin
   sources:
   - type: git
     url: https://github.com/Moulberry/PandoraLauncher
-    commit: 933ab6295da0d6b27166a3436bb19543cffc9e5c
+    tag: v2.6.2
+    commit: 931488f83630e8c792e6928d705613a87fad3fb8
   - generated/cargo-sources.yaml
