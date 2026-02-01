@@ -31,7 +31,8 @@ modules:
   - install -Dm755 target/release/pandora_launcher -t /app/bin
   sources:
   - type: git
-    url: https://github.com/Moulberry/PandoraLauncher
-    tag: v2.6.2
-    commit: 931488f83630e8c792e6928d705613a87fad3fb8
+# TODO: revert when upstream accepts pr
+    url: https://github.com/fluoriteByte/PandoraLauncher
+#    tag: v2.6.2 
+    commit: fe37d7fd5772a589fe6ea28ea8bd5eb935e2742c
   - generated/cargo-sources.yaml
