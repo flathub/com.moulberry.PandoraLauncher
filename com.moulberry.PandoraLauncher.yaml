@@ -28,7 +28,7 @@ modules:
   - install -D com.moulberry.PandoraLauncher.svg -t /app/share/icons/hicolor/scalable/apps/
   - cargo --offline fetch --manifest-path Cargo.toml --verbose
   - cargo build --offline --release
-  - install -Dm755 $(find target/ -iname 'pandora_launcher') -t /app/bin
+  - install -Dm755 target/release/pandora_launcher -t /app/bin
   sources:
   - type: git
     url: https://github.com/Moulberry/PandoraLauncher
