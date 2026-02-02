@@ -22,6 +22,8 @@ modules:
       CARGO_HOME: /run/build/PandoraLauncher/cargo
       CARGO_NET_OFFLINE: 'true'
   build-commands:
+# temp: remove valid subcategories because flatpak doesn't recognise them
+  - sed -i 's/;LauncherStore;GameTool//' package/flatpak/com.moulberry.PandoraLauncher.desktop
   - install -D package/flatpak/com.moulberry.PandoraLauncher.desktop -t /app/share/applications/
   - install -D package/flatpak/com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo
   - cp assets/icons/pandora.svg com.moulberry.PandoraLauncher.svg
