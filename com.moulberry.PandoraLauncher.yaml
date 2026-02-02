@@ -10,8 +10,8 @@ finish-args:
 - --socket=fallback-x11
 - --socket=wayland
 - --share=network
-- --device=dri # accelerating them gfx
-- --share=ipc # x11 support
+- --device=dri
+- --share=ipc
 
 modules:
 - name: sccache #Taken from https://github.com/flathub/chat.delta.desktop, updated to use newest sccache lol
