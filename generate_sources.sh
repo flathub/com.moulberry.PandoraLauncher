@@ -7,9 +7,14 @@ if [ -z "$SKIP_DISCLAMER" ]; then
 fi
 set -x
 
-repo=$(grep -o 'url: .*' com.moulberry.PandoraLauncher.yaml | sed 's/url: //')
-branch=$(grep -o 'branch: .*' com.moulberry.PandoraLauncher.yaml | sed 's/branch: //')
-version_sha=$(grep -o 'commit: .*' com.moulberry.PandoraLauncher.yaml | sed 's/commit: //')
+temporary_file=$(mktemp)
+# shellcheck disable=SC2064
+# temporary_file never changes
+trap "rm -f $temporary_file" EXIT
+tail -n 5 com.moulberry.PandoraLauncher.yaml >> "$temporary_file"
+repo=$(grep -o 'url: .*' "$temporary_file" | sed 's/url: //')
+#branch=$(grep -o 'branch: .*' "$temporary_file" | sed 's/branch: //')
+version_sha=$(grep -o 'commit: .*' "$temporary_file" | sed 's/commit: //')
 cargo_gen_override=
 
 if [ -z "$cargo_gen_override" ]; then
@@ -23,7 +28,7 @@ fi
 git_routine() {
   cd generated/.temp || exit
   if [ ! -d pandora/.git ]; then
-    git clone "$repo" --depth=1 -b "$branch" pandora
+    git clone "$repo" --depth=1 pandora
   fi
   cd pandora || exit
   git pull
