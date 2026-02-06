@@ -31,9 +31,8 @@ git_routine() {
     git clone "$repo" --depth=1 pandora
   fi
   cd pandora || exit
-  git pull
+  git fetch --all
   git checkout "$version_sha"
-  
 }
 
 cargo_gen() {

@@ -52,5 +52,5 @@ modules:
   - type: git
     url: https://github.com/Moulberry/PandoraLauncher
 #    tag: v2.7.3
-    commit: 36b09cc66403d61312cf8bc4c04921633164dbbe
+    commit: fd79fad82537d441ba98f447436906eb17760906
   - generated/cargo-sources.yaml
