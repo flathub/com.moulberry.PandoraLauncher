@@ -2316,6 +2316,26 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/fallible-iterator/fallible-iterator-0.3.0.crate
+  sha256: 2acce4a10f12dc2fb14a218589d4f1f62ef011b2d0cc4b3cb1bba8e94da14649
+  dest: cargo/vendor/fallible-iterator-0.3.0
+- type: inline
+  contents: '{"package": "2acce4a10f12dc2fb14a218589d4f1f62ef011b2d0cc4b3cb1bba8e94da14649",
+    "files": {}}'
+  dest: cargo/vendor/fallible-iterator-0.3.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/fallible-streaming-iterator/fallible-streaming-iterator-0.1.9.crate
+  sha256: 7360491ce676a36bf9bb3c56c1aa791658183a54d2744120f27285738d90465a
+  dest: cargo/vendor/fallible-streaming-iterator-0.1.9
+- type: inline
+  contents: '{"package": "7360491ce676a36bf9bb3c56c1aa791658183a54d2744120f27285738d90465a",
+    "files": {}}'
+  dest: cargo/vendor/fallible-streaming-iterator-0.1.9
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/fastrand/fastrand-1.9.0.crate
   sha256: e51093e27b0797c359783294ca4f0a911c270184cb10f85783b118614a1501be
   dest: cargo/vendor/fastrand-1.9.0
@@ -4471,6 +4491,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/hashlink/hashlink-0.11.0.crate
+  sha256: ea0b22561a9c04a7cb1a302c013e0259cd3b4bb619f145b32f72b8b4bcbed230
+  dest: cargo/vendor/hashlink-0.11.0
+- type: inline
+  contents: '{"package": "ea0b22561a9c04a7cb1a302c013e0259cd3b4bb619f145b32f72b8b4bcbed230",
+    "files": {}}'
+  dest: cargo/vendor/hashlink-0.11.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/heapless/heapless-0.9.1.crate
   sha256: b1edcd5a338e64688fbdcb7531a846cfd3476a54784dcb918a0844682bc7ada5
   dest: cargo/vendor/heapless-0.9.1
@@ -5434,6 +5464,16 @@
   contents: '{"package": "416f7e718bdb06000964960ffa43b4335ad4012ae8b99060261aa4a8088d5ccb",
     "files": {}}'
   dest: cargo/vendor/libredox-0.1.10
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.36.0.crate
+  sha256: 95b4103cffefa72eb8428cb6b47d6627161e51c2739fc5e3b734584157bc642a
+  dest: cargo/vendor/libsqlite3-sys-0.36.0
+- type: inline
+  contents: '{"package": "95b4103cffefa72eb8428cb6b47d6627161e51c2739fc5e3b734584157bc642a",
+    "files": {}}'
+  dest: cargo/vendor/libsqlite3-sys-0.36.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -7648,6 +7688,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/rsqlite-vfs/rsqlite-vfs-0.1.0.crate
+  sha256: a8a1f2315036ef6b1fbacd1972e8ee7688030b0a2121edfc2a6550febd41574d
+  dest: cargo/vendor/rsqlite-vfs-0.1.0
+- type: inline
+  contents: '{"package": "a8a1f2315036ef6b1fbacd1972e8ee7688030b0a2121edfc2a6550febd41574d",
+    "files": {}}'
+  dest: cargo/vendor/rsqlite-vfs-0.1.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/runas/runas-1.2.0.crate
   sha256: b96d6b6c505282b007a9b009f2aa38b2fd0359b81a0430ceacc60f69ade4c6a0
   dest: cargo/vendor/runas-1.2.0
@@ -7655,6 +7705,16 @@
   contents: '{"package": "b96d6b6c505282b007a9b009f2aa38b2fd0359b81a0430ceacc60f69ade4c6a0",
     "files": {}}'
   dest: cargo/vendor/runas-1.2.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/rusqlite/rusqlite-0.38.0.crate
+  sha256: f1c93dd1c9683b438c392c492109cb702b8090b2bfc8fed6f6e4eb4523f17af3
+  dest: cargo/vendor/rusqlite-0.38.0
+- type: inline
+  contents: '{"package": "f1c93dd1c9683b438c392c492109cb702b8090b2bfc8fed6f6e4eb4523f17af3",
+    "files": {}}'
+  dest: cargo/vendor/rusqlite-0.38.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -8465,6 +8525,16 @@
   contents: '{"package": "d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d",
     "files": {}}'
   dest: cargo/vendor/spki-0.7.3
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/sqlite-wasm-rs/sqlite-wasm-rs-0.5.2.crate
+  sha256: 2f4206ed3a67690b9c29b77d728f6acc3ce78f16bf846d83c94f76400320181b
+  dest: cargo/vendor/sqlite-wasm-rs-0.5.2
+- type: inline
+  contents: '{"package": "2f4206ed3a67690b9c29b77d728f6acc3ce78f16bf846d83c94f76400320181b",
+    "files": {}}'
+  dest: cargo/vendor/sqlite-wasm-rs-0.5.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
