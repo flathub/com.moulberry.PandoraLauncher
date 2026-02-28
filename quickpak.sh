@@ -9,7 +9,7 @@ else
   FPBUILD="flatpak run org.flatpak.Builder"
 fi
 
-$FPBUILD --force-clean build --repo=repo "$FLATPAK_MANIFEST_NAME" --user --mirror-screenshots-url=https://dl.flathub.org/media --ccache
+$FPBUILD --force-clean build --repo=repo "$FLATPAK_MANIFEST_NAME" --user --mirror-screenshots-url=https://dl.flathub.org/media --ccache || exit
 # uncomment to build bundle
 # flatpak build-bundle repo release.flatpak "$FLATPAK_MANIFEST_NAME"
 flatpak run --command=flatpak-builder-lint org.flatpak.Builder --exceptions --debug repo repo

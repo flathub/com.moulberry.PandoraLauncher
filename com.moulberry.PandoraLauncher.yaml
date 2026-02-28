@@ -39,6 +39,8 @@ modules:
       RUSTC_WRAPPER: /app/bin/sccache
       SCCACHE_DIR: /run/ccache/sccache/
   build-commands:
+# I am doing this because of rust slop :sob:
+  -  cp -r --reflink=auto "cargo/vendor/gpui-component-assets" "cargo/vendor/assets"
 # temp: remove valid subcategories because upstream tool that flatpak uses doesn't recognise them
   - desktop-file-edit --remove-category=GameTool --remove-category=LauncherStore package/flatpak/com.moulberry.PandoraLauncher.desktop
   - install -D package/flatpak/com.moulberry.PandoraLauncher.desktop -t /app/share/applications/

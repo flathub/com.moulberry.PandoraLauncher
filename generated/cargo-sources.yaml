@@ -7,6 +7,10 @@
   commit: 59c527bfa6bd208f151efc15c9201ac04a1d5df5
   dest: flatpak-cargo/git/gpui-component-59c527b
 - type: git
+  url: https://github.com/longbridge/gpui-component
+  commit: 5b3c3ebcaf973168d54c6a66e3ccd1fa2d115926
+  dest: flatpak-cargo/git/gpui-component-5b3c3eb
+- type: git
   url: https://github.com/zed-industries/xim-rs
   commit: 16f35a2c881b815a2b6cdfd6687988e84f8447d8
   dest: flatpak-cargo/git/xim-rs-16f35a2
@@ -4005,6 +4009,64 @@
 - type: inline
   contents: '{"package": null, "files": {}}'
   dest: cargo/vendor/gpui-component
+  dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-5b3c3eb/crates/assets"
+    "cargo/vendor/gpui-component-assets"
+- type: inline
+  contents: '[package]
+
+    name = "gpui-component-assets"
+
+    description = "Default bundled assets for GPUI Component."
+
+    keywords = ["desktop", "gpui", "shadcn", "ui", "uikit"]
+
+    license = "Apache-2.0"
+
+    documentation = "https://docs.rs/gpui-component"
+
+    homepage = "https://longbridge.github.io/gpui-component"
+
+    repository = "https://github.com/longbridge/gpui-component"
+
+    readme = "README.md"
+
+    edition = "2024"
+
+    publish = true
+
+    version = "0.5.1"
+
+
+    [lib]
+
+    doctest = false
+
+
+    [dependencies]
+
+    anyhow = "1"
+
+
+    [dependencies.gpui]
+
+    git = "https://github.com/zed-industries/zed"
+
+
+    [dependencies.rust-embed]
+
+    version = "8.7.2"
+
+    features = ["interpolate-folder-path"]
+
+    '
+  dest: cargo/vendor/gpui-component-assets
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/gpui-component-assets
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
@@ -9317,6 +9379,16 @@
   contents: '{"package": "dc6fe69c597f9c37bfeeeeeb33da3530379845f10be461a66d16d03eca2ded77",
     "files": {}}'
   dest: cargo/vendor/shell-words-1.1.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/shellexpand/shellexpand-3.1.2.crate
+  sha256: 32824fab5e16e6c4d86dc1ba84489390419a39f97699852b66480bb87d297ed8
+  dest: cargo/vendor/shellexpand-3.1.2
+- type: inline
+  contents: '{"package": "32824fab5e16e6c4d86dc1ba84489390419a39f97699852b66480bb87d297ed8",
+    "files": {}}'
+  dest: cargo/vendor/shellexpand-3.1.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip

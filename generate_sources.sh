@@ -31,9 +31,8 @@ git_routine() {
     git clone "$repo" --depth=1 pandora
   fi
   cd pandora || exit
-  git pull
-  git checkout "$version_sha"
-  
+  git reset --hard "$version_sha"
+  cargo add gpui-component-assets --git=https://github.com/longbridge/gpui-component.git --rev=5b3c3ebcaf973168d54c6a66e3ccd1fa2d115926 --rename=assets
 }
 
 cargo_gen() {
