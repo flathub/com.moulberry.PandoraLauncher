@@ -7,7 +7,7 @@ sdk-extensions:
 command: pandora_launcher
 finish-args:
 - --socket=pulseaudio
-- --socket=fallback-x11
+- --socket=x11
 - --socket=wayland
 - --share=network
 - --device=dri
@@ -38,6 +38,7 @@ modules:
       CARGO_NET_OFFLINE: 'true'
       RUSTC_WRAPPER: /app/bin/sccache
       SCCACHE_DIR: /run/ccache/sccache/
+      PANDORA_DISTRIBUTION: 'flathub'
   build-commands:
 # I am doing this because of rust slop :sob:
   -  cp -r --reflink=auto "cargo/vendor/gpui-component-assets" "cargo/vendor/assets"
