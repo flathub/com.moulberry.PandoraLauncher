@@ -32,8 +32,9 @@ git_routine() {
   fi
   cd pandora || exit
   git pull
-  git checkout "$version_sha"
-  
+  git reset --hard "$version_sha"
+#  assets_ver=$(grep -o 'gpui-component.git?rev=[a-zA-Z0-9]*' Cargo.lock | head -n1 | sed 's/gpui-component.git?rev=//')
+  cargo add gpui-component-assets --git=https://github.com/longbridge/gpui-component.git --rename=assets #--rev="$assets_ver"
 }
 
 cargo_gen() {
