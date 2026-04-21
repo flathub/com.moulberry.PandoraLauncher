@@ -1,15 +1,19 @@
 - type: git
   url: https://github.com/zed-industries/zed
-  commit: e4b827a7ecede0c897c1a174d4505fcef0479ded
-  dest: flatpak-cargo/git/zed-e4b827a
+  commit: 5a47e9825babb293a4e4aea3359fb860085ab63f
+  dest: flatpak-cargo/git/zed-5a47e98
 - type: git
   url: https://github.com/longbridge/gpui-component
-  commit: 19e95aaed1ff05a717ec487661bd981fa7aeb28b
-  dest: flatpak-cargo/git/gpui-component-19e95aa
+  commit: 2f7c7445d8c55e4af95c2a22695184ea8df35a32
+  dest: flatpak-cargo/git/gpui-component-2f7c744
 - type: git
   url: https://github.com/longbridge/gpui-component
-  commit: 08b75a2c881efc1f04f64797caf74982b7f0e6b2
-  dest: flatpak-cargo/git/gpui-component-08b75a2
+  commit: b67d4ef84c615e27e69c2692893477a1b7f0ab6d
+  dest: flatpak-cargo/git/gpui-component-b67d4ef
+- type: git
+  url: https://github.com/zed-industries/wgpu
+  commit: a466bc382ea747f8e1ac810efdb6dcd49a514575
+  dest: flatpak-cargo/git/wgpu-a466bc3
 - type: git
   url: https://github.com/zed-industries/xim-rs
   commit: 16f35a2c881b815a2b6cdfd6687988e84f8447d8
@@ -588,16 +592,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/base16ct/base16ct-0.2.0.crate
-  sha256: 4c7f02d4ea65f2c1853089ffd8d2787bdbc63de2f0d29dedbcf8ccdfa0ccd4cf
-  dest: cargo/vendor/base16ct-0.2.0
-- type: inline
-  contents: '{"package": "4c7f02d4ea65f2c1853089ffd8d2787bdbc63de2f0d29dedbcf8ccdfa0ccd4cf",
-    "files": {}}'
-  dest: cargo/vendor/base16ct-0.2.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/base62/base62-2.2.3.crate
   sha256: 1adf9755786e27479693dedd3271691a92b5e242ab139cacb9fb8e7fb5381111
   dest: cargo/vendor/base62-2.2.3
@@ -605,16 +599,6 @@
   contents: '{"package": "1adf9755786e27479693dedd3271691a92b5e242ab139cacb9fb8e7fb5381111",
     "files": {}}'
   dest: cargo/vendor/base62-2.2.3
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/base64/base64-0.13.1.crate
-  sha256: 9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8
-  dest: cargo/vendor/base64-0.13.1
-- type: inline
-  contents: '{"package": "9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8",
-    "files": {}}'
-  dest: cargo/vendor/base64-0.13.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -628,16 +612,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/base64ct/base64ct-1.8.3.crate
-  sha256: 2af50177e190e07a26ab74f8b1efbfe2ef87da2116221318cb1c2e82baf7de06
-  dest: cargo/vendor/base64ct-1.8.3
-- type: inline
-  contents: '{"package": "2af50177e190e07a26ab74f8b1efbfe2ef87da2116221318cb1c2e82baf7de06",
-    "files": {}}'
-  dest: cargo/vendor/base64ct-1.8.3
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/bindgen/bindgen-0.71.1.crate
   sha256: 5f58bf3d7db68cfbac37cfc485a8d711e87e064c3d0fe0435b92f7a407f9d6b3
   dest: cargo/vendor/bindgen-0.71.1
@@ -648,23 +622,23 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/bit-set/bit-set-0.8.0.crate
-  sha256: 08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3
-  dest: cargo/vendor/bit-set-0.8.0
+  url: https://static.crates.io/crates/bit-set/bit-set-0.9.1.crate
+  sha256: 34ddef2995421ab6a5c779542c81ee77c115206f4ad9d5a8e05f4ff49716a3dd
+  dest: cargo/vendor/bit-set-0.9.1
 - type: inline
-  contents: '{"package": "08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3",
+  contents: '{"package": "34ddef2995421ab6a5c779542c81ee77c115206f4ad9d5a8e05f4ff49716a3dd",
     "files": {}}'
-  dest: cargo/vendor/bit-set-0.8.0
+  dest: cargo/vendor/bit-set-0.9.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/bit-vec/bit-vec-0.8.0.crate
-  sha256: 5e764a1d40d510daf35e07be9eb06e75770908c27d411ee6c92109c9840eaaf7
-  dest: cargo/vendor/bit-vec-0.8.0
+  url: https://static.crates.io/crates/bit-vec/bit-vec-0.9.1.crate
+  sha256: b71798fca2c1fe1086445a7258a4bc81e6e49dcd24c8d0dd9a1e57395b603f51
+  dest: cargo/vendor/bit-vec-0.9.1
 - type: inline
-  contents: '{"package": "5e764a1d40d510daf35e07be9eb06e75770908c27d411ee6c92109c9840eaaf7",
+  contents: '{"package": "b71798fca2c1fe1086445a7258a4bc81e6e49dcd24c8d0dd9a1e57395b603f51",
     "files": {}}'
-  dest: cargo/vendor/bit-vec-0.8.0
+  dest: cargo/vendor/bit-vec-0.9.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -788,16 +762,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/bytecount/bytecount-0.6.9.crate
-  sha256: 175812e0be2bccb6abe50bb8d566126198344f707e304f45c648fd8f2cc0365e
-  dest: cargo/vendor/bytecount-0.6.9
-- type: inline
-  contents: '{"package": "175812e0be2bccb6abe50bb8d566126198344f707e304f45c648fd8f2cc0365e",
-    "files": {}}'
-  dest: cargo/vendor/bytecount-0.6.9
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/bytemuck/bytemuck-1.25.0.crate
   sha256: c8efb64bd706a16a1bdde310ae86b351e4d21550d98d056f22f8a7f7a2183fec
   dest: cargo/vendor/bytemuck-1.25.0
@@ -848,6 +812,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/bzip2/bzip2-0.6.1.crate
+  sha256: f3a53fac24f34a81bc9954b5d6cfce0c21e18ec6959f44f56e8e90e4bb7c346c
+  dest: cargo/vendor/bzip2-0.6.1
+- type: inline
+  contents: '{"package": "f3a53fac24f34a81bc9954b5d6cfce0c21e18ec6959f44f56e8e90e4bb7c346c",
+    "files": {}}'
+  dest: cargo/vendor/bzip2-0.6.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/calloop/calloop-0.14.4.crate
   sha256: 4dbf9978365bac10f54d1d4b04f7ce4427e51f71d61f2fe15e3fed5166474df7
   dest: cargo/vendor/calloop-0.14.4
@@ -865,36 +839,6 @@
   contents: '{"package": "138efcf0940a02ebf0cc8d1eff41a1682a46b431630f4c52450d6265876021fa",
     "files": {}}'
   dest: cargo/vendor/calloop-wayland-source-0.4.1
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/camino/camino-1.2.2.crate
-  sha256: e629a66d692cb9ff1a1c664e41771b3dcaf961985a9774c0eb0bd1b51cf60a48
-  dest: cargo/vendor/camino-1.2.2
-- type: inline
-  contents: '{"package": "e629a66d692cb9ff1a1c664e41771b3dcaf961985a9774c0eb0bd1b51cf60a48",
-    "files": {}}'
-  dest: cargo/vendor/camino-1.2.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/cargo-platform/cargo-platform-0.1.9.crate
-  sha256: e35af189006b9c0f00a064685c727031e3ed2d8020f7ba284d78cc2671bd36ea
-  dest: cargo/vendor/cargo-platform-0.1.9
-- type: inline
-  contents: '{"package": "e35af189006b9c0f00a064685c727031e3ed2d8020f7ba284d78cc2671bd36ea",
-    "files": {}}'
-  dest: cargo/vendor/cargo-platform-0.1.9
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/cargo_metadata/cargo_metadata-0.14.2.crate
-  sha256: 4acbb09d9ee8e23699b9634375c72795d095bf268439da88562cf9b501f181fa
-  dest: cargo/vendor/cargo_metadata-0.14.2
-- type: inline
-  contents: '{"package": "4acbb09d9ee8e23699b9634375c72795d095bf268439da88562cf9b501f181fa",
-    "files": {}}'
-  dest: cargo/vendor/cargo_metadata-0.14.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -1008,16 +952,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/circular-buffer/circular-buffer-1.2.0.crate
-  sha256: 14c638459986b83c2b885179bd4ea6a2cbb05697b001501a56adb3a3d230803b
-  dest: cargo/vendor/circular-buffer-1.2.0
-- type: inline
-  contents: '{"package": "14c638459986b83c2b885179bd4ea6a2cbb05697b001501a56adb3a3d230803b",
-    "files": {}}'
-  dest: cargo/vendor/circular-buffer-1.2.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/clang-sys/clang-sys-1.8.1.crate
   sha256: 0b023947811758c97c59bf9d1c188fd619ad4718dcaa767947df1cadb14f39f4
   dest: cargo/vendor/clang-sys-1.8.1
@@ -1118,17 +1052,17 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/codespan-reporting/codespan-reporting-0.12.0.crate
-  sha256: fe6d2e5af09e8c8ad56c969f2157a3d4238cebc7c55f0a517728c38f7b200f81
-  dest: cargo/vendor/codespan-reporting-0.12.0
+  url: https://static.crates.io/crates/codespan-reporting/codespan-reporting-0.13.1.crate
+  sha256: af491d569909a7e4dee0ad7db7f5341fef5c614d5b8ec8cf765732aba3cff681
+  dest: cargo/vendor/codespan-reporting-0.13.1
 - type: inline
-  contents: '{"package": "fe6d2e5af09e8c8ad56c969f2157a3d4238cebc7c55f0a517728c38f7b200f81",
+  contents: '{"package": "af491d569909a7e4dee0ad7db7f5341fef5c614d5b8ec8cf765732aba3cff681",
     "files": {}}'
-  dest: cargo/vendor/codespan-reporting-0.12.0
+  dest: cargo/vendor/codespan-reporting-0.13.1
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/collections" "cargo/vendor/collections"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/collections" "cargo/vendor/collections"
 - type: inline
   contents: '[package]
 
@@ -1142,7 +1076,7 @@
 
     license = "Apache-2.0"
 
-    description = "Standard collection type re-exports used by Zed and GPUI"
+    description = "Standard collection types used by Zed and GPUI"
 
 
     [lints.rust.unexpected_cfgs]
@@ -1294,23 +1228,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/console/console-0.16.2.crate
-  sha256: 03e45a4a8926227e4197636ba97a9fc9b00477e9f4bd711395687c5f0734bec4
-  dest: cargo/vendor/console-0.16.2
+  url: https://static.crates.io/crates/console_error_panic_hook/console_error_panic_hook-0.1.7.crate
+  sha256: a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc
+  dest: cargo/vendor/console_error_panic_hook-0.1.7
 - type: inline
-  contents: '{"package": "03e45a4a8926227e4197636ba97a9fc9b00477e9f4bd711395687c5f0734bec4",
+  contents: '{"package": "a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc",
     "files": {}}'
-  dest: cargo/vendor/console-0.16.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/const-oid/const-oid-0.9.6.crate
-  sha256: c2459377285ad874054d797f3ccebf984978aa39129f6eafde5cdc8315b612f8
-  dest: cargo/vendor/const-oid-0.9.6
-- type: inline
-  contents: '{"package": "c2459377285ad874054d797f3ccebf984978aa39129f6eafde5cdc8315b612f8",
-    "files": {}}'
-  dest: cargo/vendor/const-oid-0.9.6
+  dest: cargo/vendor/console_error_panic_hook-0.1.7
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -1334,13 +1258,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/convert_case/convert_case-0.4.0.crate
-  sha256: 6245d59a3e82a7fc217c5828a6692dbc6dfb63a0c8c90495621f7b9d79704a0e
-  dest: cargo/vendor/convert_case-0.4.0
+  url: https://static.crates.io/crates/convert_case/convert_case-0.10.0.crate
+  sha256: 633458d4ef8c78b72454de2d54fd6ab2e60f9e02be22f3c6104cdc8a4e0fceb9
+  dest: cargo/vendor/convert_case-0.10.0
 - type: inline
-  contents: '{"package": "6245d59a3e82a7fc217c5828a6692dbc6dfb63a0c8c90495621f7b9d79704a0e",
+  contents: '{"package": "633458d4ef8c78b72454de2d54fd6ab2e60f9e02be22f3c6104cdc8a4e0fceb9",
     "files": {}}'
-  dest: cargo/vendor/convert_case-0.4.0
+  dest: cargo/vendor/convert_case-0.10.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -1594,16 +1518,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/crypto-bigint/crypto-bigint-0.5.5.crate
-  sha256: 0dc92fb57ca44df6db8059111ab3af99a63d5d0f8375d9972e319a379c6bab76
-  dest: cargo/vendor/crypto-bigint-0.5.5
-- type: inline
-  contents: '{"package": "0dc92fb57ca44df6db8059111ab3af99a63d5d0f8375d9972e319a379c6bab76",
-    "files": {}}'
-  dest: cargo/vendor/crypto-bigint-0.5.5
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/crypto-common/crypto-common-0.1.7.crate
   sha256: 78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a
   dest: cargo/vendor/crypto-common-0.1.7
@@ -1631,16 +1545,6 @@
   contents: '{"package": "e2931af7e13dc045d8e9d26afccc6fa115d64e115c9c84b1166288b46f6782c2",
     "files": {}}'
   dest: cargo/vendor/ctor-proc-macro-0.0.6
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/cvlib/cvlib-0.1.2.crate
-  sha256: 750da56aab821c58080fd6d29bc0a5691010d60ee0f175ed1678d42bc6a326e9
-  dest: cargo/vendor/cvlib-0.1.2
-- type: inline
-  contents: '{"package": "750da56aab821c58080fd6d29bc0a5691010d60ee0f175ed1678d42bc6a326e9",
-    "files": {}}'
-  dest: cargo/vendor/cvlib-0.1.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -1674,16 +1578,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/dashmap/dashmap-5.5.3.crate
-  sha256: 978747c1d849a7d2ee5e8adc0159961c48fb7e5db2f06af6723b80123bb53856
-  dest: cargo/vendor/dashmap-5.5.3
-- type: inline
-  contents: '{"package": "978747c1d849a7d2ee5e8adc0159961c48fb7e5db2f06af6723b80123bb53856",
-    "files": {}}'
-  dest: cargo/vendor/dashmap-5.5.3
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/data-encoding/data-encoding-2.10.0.crate
   sha256: d7a1e2f27636f116493b8b860f5546edb47c8d8f8ea73e1d2a20be88e28d1fea
   dest: cargo/vendor/data-encoding-2.10.0
@@ -1704,26 +1598,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/dbus/dbus-0.9.10.crate
-  sha256: 21b3aa68d7e7abee336255bd7248ea965cc393f3e70411135a6f6a4b651345d4
-  dest: cargo/vendor/dbus-0.9.10
-- type: inline
-  contents: '{"package": "21b3aa68d7e7abee336255bd7248ea965cc393f3e70411135a6f6a4b651345d4",
-    "files": {}}'
-  dest: cargo/vendor/dbus-0.9.10
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/dbus-secret-service/dbus-secret-service-4.1.0.crate
-  sha256: 708b509edf7889e53d7efb0ffadd994cc6c2345ccb62f55cfd6b0682165e4fa6
-  dest: cargo/vendor/dbus-secret-service-4.1.0
-- type: inline
-  contents: '{"package": "708b509edf7889e53d7efb0ffadd994cc6c2345ccb62f55cfd6b0682165e4fa6",
-    "files": {}}'
-  dest: cargo/vendor/dbus-secret-service-4.1.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/deflate64/deflate64-0.1.10.crate
   sha256: 26bf8fc351c5ed29b5c2f0cbbac1b209b74f60ecd62e675a998df72c49af5204
   dest: cargo/vendor/deflate64-0.1.10
@@ -1731,16 +1605,6 @@
   contents: '{"package": "26bf8fc351c5ed29b5c2f0cbbac1b209b74f60ecd62e675a998df72c49af5204",
     "files": {}}'
   dest: cargo/vendor/deflate64-0.1.10
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/der/der-0.7.10.crate
-  sha256: e7c1832837b905bbfb5101e07cc24c8deddf52f93225eee6ead5f4d63d53ddcb
-  dest: cargo/vendor/der-0.7.10
-- type: inline
-  contents: '{"package": "e7c1832837b905bbfb5101e07cc24c8deddf52f93225eee6ead5f4d63d53ddcb",
-    "files": {}}'
-  dest: cargo/vendor/der-0.7.10
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -1754,17 +1618,27 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/derive_more/derive_more-0.99.20.crate
-  sha256: 6edb4b64a43d977b8e99788fe3a04d483834fba1215a7e02caa415b626497f7f
-  dest: cargo/vendor/derive_more-0.99.20
+  url: https://static.crates.io/crates/derive_more/derive_more-2.1.1.crate
+  sha256: d751e9e49156b02b44f9c1815bcb94b984cdcc4396ecc32521c739452808b134
+  dest: cargo/vendor/derive_more-2.1.1
 - type: inline
-  contents: '{"package": "6edb4b64a43d977b8e99788fe3a04d483834fba1215a7e02caa415b626497f7f",
+  contents: '{"package": "d751e9e49156b02b44f9c1815bcb94b984cdcc4396ecc32521c739452808b134",
     "files": {}}'
-  dest: cargo/vendor/derive_more-0.99.20
+  dest: cargo/vendor/derive_more-2.1.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/derive_more-impl/derive_more-impl-2.1.1.crate
+  sha256: 799a97264921d8623a957f6c3b9011f3b5492f557bbb7a5a19b7fa6d06ba8dcb
+  dest: cargo/vendor/derive_more-impl-2.1.1
+- type: inline
+  contents: '{"package": "799a97264921d8623a957f6c3b9011f3b5492f557bbb7a5a19b7fa6d06ba8dcb",
+    "files": {}}'
+  dest: cargo/vendor/derive_more-impl-2.1.1
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/refineable/derive_refineable"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/refineable/derive_refineable"
     "cargo/vendor/derive_refineable"
 - type: inline
   contents: '[package]
@@ -1940,13 +1814,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/dispatch2/dispatch2-0.3.0.crate
-  sha256: 89a09f22a6c6069a18470eb92d2298acf25463f14256d24778e1230d789a2aec
-  dest: cargo/vendor/dispatch2-0.3.0
+  url: https://static.crates.io/crates/dispatch2/dispatch2-0.3.1.crate
+  sha256: 1e0e367e4e7da84520dedcac1901e4da967309406d1e51017ae1abfb97adbd38
+  dest: cargo/vendor/dispatch2-0.3.1
 - type: inline
-  contents: '{"package": "89a09f22a6c6069a18470eb92d2298acf25463f14256d24778e1230d789a2aec",
+  contents: '{"package": "1e0e367e4e7da84520dedcac1901e4da967309406d1e51017ae1abfb97adbd38",
     "files": {}}'
-  dest: cargo/vendor/dispatch2-0.3.0
+  dest: cargo/vendor/dispatch2-0.3.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2040,16 +1914,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/ecdsa/ecdsa-0.16.9.crate
-  sha256: ee27f32b5c5292967d2d4a9d7f1e0b0aed2c15daded5a60300e4abb9d8020bca
-  dest: cargo/vendor/ecdsa-0.16.9
-- type: inline
-  contents: '{"package": "ee27f32b5c5292967d2d4a9d7f1e0b0aed2c15daded5a60300e4abb9d8020bca",
-    "files": {}}'
-  dest: cargo/vendor/ecdsa-0.16.9
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/either/either-1.15.0.crate
   sha256: 48c757948c5ede0e46177b7add2e67155f70e33c07fea8284df6576da70b3719
   dest: cargo/vendor/either-1.15.0
@@ -2060,16 +1924,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/elliptic-curve/elliptic-curve-0.13.8.crate
-  sha256: b5e6043086bf7973472e0c7dff2142ea0b680d30e18d9cc40f267efbf222bd47
-  dest: cargo/vendor/elliptic-curve-0.13.8
-- type: inline
-  contents: '{"package": "b5e6043086bf7973472e0c7dff2142ea0b680d30e18d9cc40f267efbf222bd47",
-    "files": {}}'
-  dest: cargo/vendor/elliptic-curve-0.13.8
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/embed-resource/embed-resource-3.0.6.crate
   sha256: 55a075fc573c64510038d7ee9abc7990635863992f83ebc52c8b433b8411a02e
   dest: cargo/vendor/embed-resource-3.0.6
@@ -2077,16 +1931,6 @@
   contents: '{"package": "55a075fc573c64510038d7ee9abc7990635863992f83ebc52c8b433b8411a02e",
     "files": {}}'
   dest: cargo/vendor/embed-resource-3.0.6
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/encode_unicode/encode_unicode-1.0.0.crate
-  sha256: 34aa73646ffb006b8f5147f3dc182bd4bcb190227ce861fc4a4844bf8e3cb2c0
-  dest: cargo/vendor/encode_unicode-1.0.0
-- type: inline
-  contents: '{"package": "34aa73646ffb006b8f5147f3dc182bd4bcb190227ce861fc4a4844bf8e3cb2c0",
-    "files": {}}'
-  dest: cargo/vendor/encode_unicode-1.0.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2260,16 +2104,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/error-chain/error-chain-0.12.4.crate
-  sha256: 2d2f06b9cac1506ece98fe3231e3cc9c4410ec3d5b1f24ae1c8946f0742cdefc
-  dest: cargo/vendor/error-chain-0.12.4
-- type: inline
-  contents: '{"package": "2d2f06b9cac1506ece98fe3231e3cc9c4410ec3d5b1f24ae1c8946f0742cdefc",
-    "files": {}}'
-  dest: cargo/vendor/error-chain-0.12.4
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/etagere/etagere-0.2.15.crate
   sha256: fc89bf99e5dc15954a60f707c1e09d7540e5cd9af85fa75caa0b510bc08c5342
   dest: cargo/vendor/etagere-0.2.15
@@ -2410,16 +2244,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/ff/ff-0.13.1.crate
-  sha256: c0b50bfb653653f9ca9095b427bed08ab8d75a137839d9ad64eb11810d5b6393
-  dest: cargo/vendor/ff-0.13.1
-- type: inline
-  contents: '{"package": "c0b50bfb653653f9ca9095b427bed08ab8d75a137839d9ad64eb11810d5b6393",
-    "files": {}}'
-  dest: cargo/vendor/ff-0.13.1
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/file-id/file-id-0.2.3.crate
   sha256: e1fc6a637b6dc58414714eddd9170ff187ecb0933d4c7024d1abbd23a3cc26e9
   dest: cargo/vendor/file-id-0.2.3
@@ -2467,6 +2291,16 @@
   contents: '{"package": "0ce7134b9999ecaf8bcd65542e436736ef32ddca1b3e06094cb6ec5755203b80",
     "files": {}}'
   dest: cargo/vendor/fixedbitset-0.4.2
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/fixedbitset/fixedbitset-0.5.7.crate
+  sha256: 1d674e81391d1e1ab681a28d99df07927c6d4aa5b027d7da16ba32d1d21ecd99
+  dest: cargo/vendor/fixedbitset-0.5.7
+- type: inline
+  contents: '{"package": "1d674e81391d1e1ab681a28d99df07927c6d4aa5b027d7da16ba32d1d21ecd99",
+    "files": {}}'
+  dest: cargo/vendor/fixedbitset-0.5.7
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2730,6 +2564,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/futures-concurrency/futures-concurrency-7.7.1.crate
+  sha256: 175cd8cca9e1d45b87f18ffa75088f2099e3c4fe5e2f83e42de112560bea8ea6
+  dest: cargo/vendor/futures-concurrency-7.7.1
+- type: inline
+  contents: '{"package": "175cd8cca9e1d45b87f18ffa75088f2099e3c4fe5e2f83e42de112560bea8ea6",
+    "files": {}}'
+  dest: cargo/vendor/futures-concurrency-7.7.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/futures-core/futures-core-0.3.32.crate
   sha256: 7e3450815272ef58cec6d564423f6e755e25379b217b0bc688e295ba24df6b1d
   dest: cargo/vendor/futures-core-0.3.32
@@ -2870,6 +2714,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/gif/gif-0.13.3.crate
+  sha256: 4ae047235e33e2829703574b54fdec96bfbad892062d97fed2f76022287de61b
+  dest: cargo/vendor/gif-0.13.3
+- type: inline
+  contents: '{"package": "4ae047235e33e2829703574b54fdec96bfbad892062d97fed2f76022287de61b",
+    "files": {}}'
+  dest: cargo/vendor/gif-0.13.3
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/gif/gif-0.14.1.crate
   sha256: f5df2ba84018d80c213569363bdcd0c64e6933c67fe4c1d60ecf822971a3c35e
   dest: cargo/vendor/gif-0.14.1
@@ -2940,13 +2794,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/glow/glow-0.16.0.crate
-  sha256: c5e5ea60d70410161c8bf5da3fdfeaa1c72ed2c15f8bbb9d19fe3a4fad085f08
-  dest: cargo/vendor/glow-0.16.0
+  url: https://static.crates.io/crates/glow/glow-0.17.0.crate
+  sha256: 29038e1c483364cc6bb3cf78feee1816002e127c331a1eec55a4d202b9e1adb5
+  dest: cargo/vendor/glow-0.17.0
 - type: inline
-  contents: '{"package": "c5e5ea60d70410161c8bf5da3fdfeaa1c72ed2c15f8bbb9d19fe3a4fad085f08",
+  contents: '{"package": "29038e1c483364cc6bb3cf78feee1816002e127c331a1eec55a4d202b9e1adb5",
     "files": {}}'
-  dest: cargo/vendor/glow-0.16.0
+  dest: cargo/vendor/glow-0.17.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2990,7 +2844,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui" "cargo/vendor/gpui"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui" "cargo/vendor/gpui"
 - type: inline
   contents: '[package]
 
@@ -3060,8 +2914,8 @@
 
     default = ["font-kit", "wayland", "x11", "windows-manifest"]
 
-    test-support = ["leak-detection", "collections/test-support", "util/test-support",
-    "http_client/test-support", "wayland", "x11"]
+    test-support = ["leak-detection", "collections/test-support", "http_client/test-support",
+    "wayland", "x11", "proptest"]
 
     inspector = ["gpui_macros/inspector"]
 
@@ -3073,7 +2927,7 @@
 
     screen-capture = ["scap"]
 
-    windows-manifest = []
+    windows-manifest = ["dep:embed-resource"]
 
 
     [lib]
@@ -3091,11 +2945,11 @@
 
     ctor = "0.4.0"
 
-    derive_more = "0.99.17"
-
     etagere = "0.2"
 
-    futures = "0.3"
+    futures = "0.3.32"
+
+    futures-concurrency = "7.7.1"
 
     image = "0.25.1"
 
@@ -3115,11 +2969,15 @@
 
     raw-window-handle = "0.6"
 
+    regex = "1.5"
+
+    ttf-parser = "0.25"
+
     seahash = "4.1"
 
     slotmap = "1.0.6"
 
-    smol = "2.0"
+    async-channel = "2.5.0"
 
     stacksafe = "0.1"
 
@@ -3133,9 +2991,13 @@
 
     pin-project = "1.1.10"
 
-    circular-buffer = "1.0"
-
     spin = "0.10.0"
+
+    pollster = "0.4.0"
+
+    url = "2.2"
+
+    web-time = "1.1.0"
 
 
     [dependencies.backtrace]
@@ -3159,9 +3021,22 @@
     version = "0.1.0"
 
 
+    [dependencies.derive_more]
+
+    version = "2.1.1"
+
+    features = ["add", "add_assign", "deref", "deref_mut", "display", "from_str",
+    "mul", "mul_assign", "not"]
+
+
     [dependencies.gpui_macros]
 
     path = "crates/gpui_macros"
+
+
+    [dependencies.gpui_shared_string]
+
+    path = "crates/gpui_shared_string"
 
 
     [dependencies.http_client]
@@ -3181,6 +3056,17 @@
     version = "0.5"
 
     features = ["futures-traits"]
+
+
+    [dependencies.proptest]
+
+    optional = true
+
+    git = "https://github.com/proptest-rs/proptest"
+
+    rev = "3dca198a8fef1b32e3a66f1e1897c955b4dc5b5b"
+
+    features = ["attr-macro"]
 
 
     [dependencies.chrono]
@@ -3206,7 +3092,7 @@
 
     default-features = false
 
-    features = ["text", "system-fonts", "memmap-fonts"]
+    features = ["text", "system-fonts", "memmap-fonts", "raster-images"]
 
 
     [dependencies.usvg]
@@ -3261,9 +3147,9 @@
     path = "crates/sum_tree"
 
 
-    [dependencies.util]
+    [dependencies.gpui_util]
 
-    path = "crates/util"
+    path = "crates/gpui_util"
 
 
     [dependencies.uuid]
@@ -3271,6 +3157,30 @@
     version = "1.1.2"
 
     features = ["v4", "v5", "v7", "serde"]
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.getrandom]
+
+    version = "0.3.4"
+
+    features = ["wasm_js"]
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.uuid]
+
+    features = ["js", "v4", "v5", "v7", "serde"]
+
+    version = "1.1.2"
+
+
+    [target."cfg(target_family = \"wasm\")".dev-dependencies]
+
+    wasm-bindgen = "0.2.113"
+
+
+    [target."cfg(target_family = \"wasm\")".dev-dependencies.gpui_web]
+
+    path = "crates/gpui_web"
 
 
     [target."cfg(target_os = \"macos\")".dependencies]
@@ -3358,7 +3268,7 @@
 
     [target."cfg(target_os = \"macos\")".build-dependencies.naga]
 
-    version = "28.0"
+    version = "29.0"
 
     features = ["wgsl-in"]
 
@@ -3390,9 +3300,18 @@
     features = ["Win32_Foundation"]
 
 
-    [target."cfg(target_os = \"windows\")".build-dependencies]
+    [target."cfg(not(target_family = \"wasm\"))".dev-dependencies.http_client]
 
-    embed-resource = "3.0"
+    features = ["test-support"]
+
+    path = "crates/http_client"
+
+
+    [target."cfg(not(target_family = \"wasm\"))".dev-dependencies.reqwest_client]
+
+    features = ["test-support"]
+
+    path = "crates/reqwest_client"
 
 
     [dev-dependencies]
@@ -3417,16 +3336,16 @@
 
     [dev-dependencies.gpui_platform]
 
+    features = ["font-kit"]
+
     path = "crates/gpui_platform"
 
     default-features = false
 
 
-    [dev-dependencies.http_client]
+    [dev-dependencies.gpui_util]
 
-    features = ["test-support"]
-
-    path = "crates/http_client"
+    path = "crates/gpui_util"
 
 
     [dev-dependencies.lyon]
@@ -3436,18 +3355,13 @@
     features = ["extra"]
 
 
-    [dev-dependencies.pretty_assertions]
+    [dev-dependencies.proptest]
 
-    version = "1.3.0"
+    git = "https://github.com/proptest-rs/proptest"
 
-    features = ["unstable"]
+    rev = "3dca198a8fef1b32e3a66f1e1897c955b4dc5b5b"
 
-
-    [dev-dependencies.reqwest_client]
-
-    features = ["test-support"]
-
-    path = "crates/reqwest_client"
+    features = ["attr-macro"]
 
 
     [dev-dependencies.scheduler]
@@ -3457,11 +3371,11 @@
     path = "crates/scheduler"
 
 
-    [dev-dependencies.util]
+    [build-dependencies.embed-resource]
 
-    features = ["test-support"]
+    version = "3.0"
 
-    path = "crates/util"
+    optional = true
 
 
     [[example]]
@@ -3578,6 +3492,13 @@
 
     [[example]]
 
+    name = "list_example"
+
+    path = "examples/list_example.rs"
+
+
+    [[example]]
+
     name = "mouse_pressure"
 
     path = "examples/mouse_pressure.rs"
@@ -3591,7 +3512,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-19e95aa/crates/ui" "cargo/vendor/gpui-component"
+  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-2f7c744/crates/ui" "cargo/vendor/gpui-component"
 - type: inline
   contents: '[package]
 
@@ -3648,7 +3569,7 @@
 
     notify = "7.0.0"
 
-    rust-i18n = "3"
+    rust-i18n = "4"
 
     schemars = "1"
 
@@ -4060,7 +3981,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-08b75a2/crates/assets"
+  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-2f7c744/crates/assets"
     "cargo/vendor/gpui-component-assets"
 - type: inline
   contents: '[package]
@@ -4143,7 +4064,90 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-19e95aa/crates/macros"
+  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-b67d4ef/crates/assets"
+    "cargo/vendor/gpui-component-assets"
+- type: inline
+  contents: '[package]
+
+    name = "gpui-component-assets"
+
+    description = "Default bundled assets for GPUI Component."
+
+    keywords = ["desktop", "gpui", "shadcn", "ui", "uikit"]
+
+    license = "Apache-2.0"
+
+    documentation = "https://docs.rs/gpui-component"
+
+    homepage = "https://longbridge.github.io/gpui-component"
+
+    repository = "https://github.com/longbridge/gpui-component"
+
+    readme = "README.md"
+
+    edition = "2024"
+
+    publish = true
+
+    version = "0.5.1"
+
+
+    [lib]
+
+    doctest = false
+
+
+    [dependencies]
+
+    anyhow = "1"
+
+    log = "0.4"
+
+
+    [dependencies.gpui]
+
+    git = "https://github.com/zed-industries/zed"
+
+
+    [target."cfg(not(target_family = \"wasm\"))".dependencies.rust-embed]
+
+    version = "8.7.2"
+
+    features = ["interpolate-folder-path", "include-exclude"]
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies]
+
+    wasm-bindgen = "0.2"
+
+    wasm-bindgen-futures = "0.4"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.reqwest]
+
+    git = "https://github.com/zed-industries/reqwest.git"
+
+    rev = "c15662463bda39148ba154100dd44d3fba5873a4"
+
+    default-features = false
+
+    features = ["charset", "http2", "macos-system-configuration", "multipart", "rustls-tls-native-roots",
+    "socks", "stream"]
+
+    package = "zed-reqwest"
+
+    version = "0.12.15-zed"
+
+    '
+  dest: cargo/vendor/gpui-component-assets
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/gpui-component-assets
+  dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/gpui-component-2f7c744/crates/macros"
     "cargo/vendor/gpui-component-macros"
 - type: inline
   contents: '[package]
@@ -4226,7 +4230,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui_linux" "cargo/vendor/gpui_linux"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_linux" "cargo/vendor/gpui_linux"
 - type: inline
   contents: '[package]
 
@@ -4289,13 +4293,12 @@
 
     test-support = ["gpui/test-support"]
 
-    wayland = ["bitflags", "gpui_wgpu", "ashpd/wayland", "cosmic-text", "font-kit",
-    "calloop-wayland-source", "wayland-backend", "wayland-client", "wayland-cursor",
-    "wayland-protocols", "wayland-protocols-plasma", "wayland-protocols-wlr", "filedescriptor",
-    "xkbcommon", "open", "gpui/wayland"]
+    wayland = ["bitflags", "gpui_wgpu", "ashpd/wayland", "calloop-wayland-source",
+    "wayland-backend", "wayland-client", "wayland-cursor", "wayland-protocols", "wayland-protocols-plasma",
+    "wayland-protocols-wlr", "filedescriptor", "xkbcommon", "open", "gpui/wayland"]
 
-    x11 = ["gpui_wgpu", "ashpd", "cosmic-text", "font-kit", "as-raw-xcb-connection",
-    "x11rb", "xkbcommon", "xim", "x11-clipboard", "filedescriptor", "open", "scap?/x11"]
+    x11 = ["gpui_wgpu", "ashpd", "as-raw-xcb-connection", "x11rb", "xkbcommon", "xim",
+    "x11-clipboard", "filedescriptor", "open", "scap?/x11"]
 
     screen-capture = ["gpui/screen-capture", "scap"]
 
@@ -4306,7 +4309,7 @@
 
     bytemuck = "1"
 
-    futures = "0.3"
+    futures = "0.3.32"
 
     itertools = "0.14.0"
 
@@ -4315,6 +4318,8 @@
     parking_lot = "0.12.1"
 
     pathfinder_geometry = "0.5"
+
+    pollster = "0.4.0"
 
     profiling = "1"
 
@@ -4344,6 +4349,8 @@
     [target."cfg(any(target_os = \"linux\", target_os = \"freebsd\"))".dependencies.gpui_wgpu]
 
     optional = true
+
+    features = ["font-kit"]
 
     path = "crates/gpui_wgpu"
 
@@ -4407,31 +4414,9 @@
     "trash"]
 
 
-    [target."cfg(any(target_os = \"linux\", target_os = \"freebsd\"))".dependencies.cosmic-text]
-
-    version = "0.17.0"
-
-    optional = true
-
-
     [target."cfg(any(target_os = \"linux\", target_os = \"freebsd\"))".dependencies.swash]
 
     version = "0.2.6"
-
-
-    [target."cfg(any(target_os = \"linux\", target_os = \"freebsd\"))".dependencies.font-kit]
-
-    git = "https://github.com/zed-industries/font-kit"
-
-    rev = "110523127440aefb11ce0cf280ae7c5071337ec5"
-
-    package = "zed-font-kit"
-
-    version = "0.14.1-zed"
-
-    features = ["source-fontconfig-dlopen"]
-
-    optional = true
 
 
     [target."cfg(any(target_os = \"linux\", target_os = \"freebsd\"))".dependencies.bitflags]
@@ -4548,7 +4533,7 @@
     version = "0.13.1"
 
     features = ["allow-unsafe-code", "xkb", "randr", "xinput", "cursor", "resource_manager",
-    "sync"]
+    "sync", "dri3"]
 
     optional = true
 
@@ -4583,7 +4568,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui_macos" "cargo/vendor/gpui_macos"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_macos" "cargo/vendor/gpui_macos"
 - type: inline
   contents: '[package]
 
@@ -4680,13 +4665,13 @@
 
     ctor = "0.4.0"
 
-    derive_more = "0.99.17"
+    dispatch2 = "0.3.1"
 
     etagere = "0.2"
 
     foreign-types = "0.5"
 
-    futures = "0.3"
+    futures = "0.3.32"
 
     image = "0.25.1"
 
@@ -4721,6 +4706,14 @@
     features = ["metal"]
 
 
+    [target."cfg(target_os = \"macos\")".dependencies.derive_more]
+
+    version = "2.1.1"
+
+    features = ["add", "add_assign", "deref", "deref_mut", "display", "from_str",
+    "mul", "mul_assign", "not"]
+
+
     [target."cfg(target_os = \"macos\")".dependencies.font-kit]
 
     git = "https://github.com/zed-industries/font-kit"
@@ -4744,6 +4737,15 @@
     [target."cfg(target_os = \"macos\")".dependencies.media]
 
     path = "crates/media"
+
+
+    [target."cfg(target_os = \"macos\")".dependencies.objc2-app-kit]
+
+    version = "0.3"
+
+    default-features = false
+
+    features = ["NSGraphics"]
 
 
     [target."cfg(target_os = \"macos\")".dependencies.semver]
@@ -4779,11 +4781,6 @@
     features = ["v4", "v5", "v7", "serde"]
 
 
-    [target."cfg(target_os = \"macos\")".build-dependencies]
-
-    bindgen = "0.71"
-
-
     [target."cfg(target_os = \"macos\")".build-dependencies.cbindgen]
 
     version = "0.28.0"
@@ -4806,7 +4803,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui_macros" "cargo/vendor/gpui_macros"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_macros" "cargo/vendor/gpui_macros"
 - type: inline
   contents: '[package]
 
@@ -4907,7 +4904,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui_platform" "cargo/vendor/gpui_platform"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_platform" "cargo/vendor/gpui_platform"
 - type: inline
   contents: '[package]
 
@@ -5003,11 +5000,30 @@
     default-features = false
 
 
+    [target."cfg(target_os = \"windows\")".dependencies.gpui]
+
+    features = ["windows-manifest"]
+
+    path = "crates/gpui"
+
+    default-features = false
+
+
     [target."cfg(any(target_os = \"linux\", target_os = \"freebsd\"))".dependencies.gpui_linux]
 
     path = "crates/gpui_linux"
 
     default-features = false
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies]
+
+    console_error_panic_hook = "0.1.7"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.gpui_web]
+
+    path = "crates/gpui_web"
 
     '
   dest: cargo/vendor/gpui_platform
@@ -5018,7 +5034,328 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui_wgpu" "cargo/vendor/gpui_wgpu"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_shared_string"
+    "cargo/vendor/gpui_shared_string"
+- type: inline
+  contents: '[package]
+
+    name = "gpui_shared_string"
+
+    version = "0.1.0"
+
+    publish = false
+
+    edition = "2024"
+
+
+    [lib]
+
+    path = "gpui_shared_string.rs"
+
+
+    [dependencies.derive_more]
+
+    version = "2.1.1"
+
+    features = ["add", "add_assign", "deref", "deref_mut", "display", "from_str",
+    "mul", "mul_assign", "not"]
+
+
+    [dependencies.gpui_util]
+
+    path = "crates/gpui_util"
+
+
+    [dependencies.schemars]
+
+    version = "1.0"
+
+    features = ["indexmap2"]
+
+
+    [dependencies.serde]
+
+    version = "1.0.221"
+
+    features = ["derive", "rc"]
+
+
+    [lints.rust.unexpected_cfgs]
+
+    level = "allow"
+
+
+    [lints.clippy]
+
+    dbg_macro = "deny"
+
+    todo = "deny"
+
+    declare_interior_mutable_const = "deny"
+
+    redundant_clone = "deny"
+
+    disallowed_methods = "deny"
+
+    type_complexity = "allow"
+
+    let_underscore_future = "allow"
+
+    single_range_in_vec_init = "allow"
+
+    too_many_arguments = "allow"
+
+    large_enum_variant = "allow"
+
+    nonminimal_bool = "allow"
+
+
+    [lints.clippy.style]
+
+    level = "allow"
+
+    priority = -1
+
+    '
+  dest: cargo/vendor/gpui_shared_string
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/gpui_shared_string
+  dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_util" "cargo/vendor/gpui_util"
+- type: inline
+  contents: '[package]
+
+    name = "gpui_util"
+
+    version = "0.1.0"
+
+    publish = false
+
+    edition = "2024"
+
+
+    [dependencies]
+
+    anyhow = "1.0.86"
+
+
+    [dependencies.log]
+
+    version = "0.4.16"
+
+    features = ["kv_unstable_serde", "serde"]
+
+
+    [lints.rust.unexpected_cfgs]
+
+    level = "allow"
+
+
+    [lints.clippy]
+
+    dbg_macro = "deny"
+
+    todo = "deny"
+
+    declare_interior_mutable_const = "deny"
+
+    redundant_clone = "deny"
+
+    disallowed_methods = "deny"
+
+    type_complexity = "allow"
+
+    let_underscore_future = "allow"
+
+    single_range_in_vec_init = "allow"
+
+    too_many_arguments = "allow"
+
+    large_enum_variant = "allow"
+
+    nonminimal_bool = "allow"
+
+
+    [lints.clippy.style]
+
+    level = "allow"
+
+    priority = -1
+
+    '
+  dest: cargo/vendor/gpui_util
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/gpui_util
+  dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_web" "cargo/vendor/gpui_web"
+- type: inline
+  contents: '[package]
+
+    name = "gpui_web"
+
+    version = "0.1.0"
+
+    publish = false
+
+    edition = "2024"
+
+    license = "Apache-2.0"
+
+    autoexamples = false
+
+
+    [lints.rust.unexpected_cfgs]
+
+    level = "allow"
+
+
+    [lints.clippy]
+
+    dbg_macro = "deny"
+
+    todo = "deny"
+
+    declare_interior_mutable_const = "deny"
+
+    redundant_clone = "deny"
+
+    disallowed_methods = "deny"
+
+    type_complexity = "allow"
+
+    let_underscore_future = "allow"
+
+    single_range_in_vec_init = "allow"
+
+    too_many_arguments = "allow"
+
+    large_enum_variant = "allow"
+
+    nonminimal_bool = "allow"
+
+
+    [lints.clippy.style]
+
+    level = "allow"
+
+    priority = -1
+
+
+    [features]
+
+    default = ["multithreaded"]
+
+    multithreaded = ["dep:wasm_thread"]
+
+
+    [lib]
+
+    path = "src/gpui_web.rs"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies]
+
+    anyhow = "1.0.86"
+
+    futures = "0.3.32"
+
+    wasm-bindgen = "0.2.113"
+
+    wasm-bindgen-futures = "0.4"
+
+    web-time = "1.1.0"
+
+    console_error_panic_hook = "0.1.7"
+
+    js-sys = "0.3"
+
+    raw-window-handle = "0.6"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.gpui]
+
+    path = "crates/gpui"
+
+    default-features = false
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.parking_lot]
+
+    features = ["nightly"]
+
+    version = "0.12.1"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.gpui_wgpu]
+
+    path = "crates/gpui_wgpu"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.http_client]
+
+    path = "crates/http_client"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.log]
+
+    version = "0.4.16"
+
+    features = ["kv_unstable_serde", "serde"]
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.smallvec]
+
+    version = "1.6"
+
+    features = ["union", "const_new"]
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.uuid]
+
+    version = "1.1.2"
+
+    features = ["v4", "v5", "v7", "serde"]
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.wasm_thread]
+
+    version = "0.3"
+
+    features = ["es_modules"]
+
+    optional = true
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.web-sys]
+
+    version = "0.3"
+
+    features = ["console", "CompositionEvent", "CssStyleDeclaration", "DataTransfer",
+    "Document", "DomRect", "DragEvent", "Element", "EventTarget", "File", "FileList",
+    "HtmlCanvasElement", "HtmlElement", "HtmlInputElement", "KeyboardEvent", "MediaQueryList",
+    "MediaQueryListEvent", "MouseEvent", "Navigator", "PointerEvent", "ResizeObserver",
+    "ResizeObserverBoxOptions", "ResizeObserverEntry", "ResizeObserverSize", "ResizeObserverOptions",
+    "Screen", "Storage", "VisualViewport", "Headers", "Request", "RequestInit", "RequestRedirect",
+    "Response", "WheelEvent", "Window"]
+
+    '
+  dest: cargo/vendor/gpui_web
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/gpui_web
+  dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_wgpu" "cargo/vendor/gpui_wgpu"
 - type: inline
   contents: '[package]
 
@@ -5075,13 +5412,24 @@
     path = "src/gpui_wgpu.rs"
 
 
-    [target."cfg(not(target_os = \"windows\"))".dependencies]
+    [features]
+
+    default = []
+
+    font-kit = ["dep:font-kit"]
+
+
+    [dependencies]
 
     anyhow = "1.0.86"
 
     bytemuck = "1"
 
+    cosmic-text = "0.17.0"
+
     etagere = "0.2"
+
+    itertools = "0.14.0"
 
     parking_lot = "0.12.1"
 
@@ -5089,35 +5437,81 @@
 
     raw-window-handle = "0.6"
 
-    smol = "2.0"
-
-    wgpu = "28.0"
+    swash = "0.2.6"
 
 
-    [target."cfg(not(target_os = \"windows\"))".dependencies.gpui]
+    [dependencies.gpui]
 
     path = "crates/gpui"
 
     default-features = false
 
 
-    [target."cfg(not(target_os = \"windows\"))".dependencies.collections]
+    [dependencies.collections]
 
     path = "crates/collections"
 
     version = "0.1.0"
 
 
-    [target."cfg(not(target_os = \"windows\"))".dependencies.log]
+    [dependencies.log]
 
     version = "0.4.16"
 
     features = ["kv_unstable_serde", "serde"]
 
 
-    [target."cfg(not(target_os = \"windows\"))".dependencies.util]
+    [dependencies.smallvec]
 
-    path = "crates/util"
+    version = "1.6"
+
+    features = ["union", "const_new"]
+
+
+    [dependencies.gpui_util]
+
+    path = "crates/gpui_util"
+
+
+    [dependencies.wgpu]
+
+    git = "https://github.com/zed-industries/wgpu.git"
+
+    branch = "v29"
+
+
+    [dependencies.font-kit]
+
+    git = "https://github.com/zed-industries/font-kit"
+
+    rev = "110523127440aefb11ce0cf280ae7c5071337ec5"
+
+    package = "zed-font-kit"
+
+    version = "0.14.1-zed"
+
+    optional = true
+
+
+    [target."cfg(not(target_family = \"wasm\"))".dependencies]
+
+    pollster = "0.4.0"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies]
+
+    wasm-bindgen = "0.2.113"
+
+    wasm-bindgen-futures = "0.4"
+
+    js-sys = "0.3"
+
+
+    [target."cfg(target_family = \"wasm\")".dependencies.web-sys]
+
+    version = "0.3"
+
+    features = ["HtmlCanvasElement"]
 
     '
   dest: cargo/vendor/gpui_wgpu
@@ -5128,7 +5522,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/gpui_windows" "cargo/vendor/gpui_windows"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/gpui_windows" "cargo/vendor/gpui_windows"
 - type: inline
   contents: '[package]
 
@@ -5207,7 +5601,7 @@
 
     etagere = "0.2"
 
-    futures = "0.3"
+    futures = "0.3.32"
 
     image = "0.25.1"
 
@@ -5263,19 +5657,22 @@
 
     version = "0.61"
 
-    features = ["Foundation_Numerics", "Storage_Search", "Storage_Streams", "System_Threading",
-    "UI_ViewManagement", "Wdk_System_SystemServices", "Win32_Globalization", "Win32_Graphics_Direct3D",
-    "Win32_Graphics_Direct3D11", "Win32_Graphics_Direct3D_Fxc", "Win32_Graphics_DirectComposition",
-    "Win32_Graphics_DirectWrite", "Win32_Graphics_Dwm", "Win32_Graphics_Dxgi", "Win32_Graphics_Dxgi_Common",
-    "Win32_Graphics_Gdi", "Win32_Graphics_Imaging", "Win32_Graphics_Hlsl", "Win32_Networking_WinSock",
-    "Win32_Security", "Win32_Security_Credentials", "Win32_Security_Cryptography",
-    "Win32_Storage_FileSystem", "Win32_System_Com", "Win32_System_Com_StructuredStorage",
-    "Win32_System_Console", "Win32_System_DataExchange", "Win32_System_IO", "Win32_System_LibraryLoader",
+    features = ["Foundation_Numerics", "Globalization_DateTimeFormatting", "Storage_Search",
+    "Storage_Streams", "System_Threading", "UI_ViewManagement", "Wdk_System_SystemServices",
+    "Win32_Foundation", "Win32_Globalization", "Win32_Graphics_Direct3D", "Win32_Graphics_Direct3D11",
+    "Win32_Graphics_Direct3D_Fxc", "Win32_Graphics_DirectComposition", "Win32_Graphics_DirectWrite",
+    "Win32_Graphics_DirectManipulation", "Win32_Graphics_Dwm", "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Dxgi_Common", "Win32_Graphics_Gdi", "Win32_Graphics_Imaging",
+    "Win32_Graphics_Hlsl", "Win32_Networking_WinSock", "Win32_Security", "Win32_Security_Credentials",
+    "Win32_Security_Cryptography", "Win32_Storage_FileSystem", "Win32_System_Com",
+    "Win32_System_Com_StructuredStorage", "Win32_System_Console", "Win32_System_Diagnostics_Debug",
+    "Win32_System_DataExchange", "Win32_System_IO", "Win32_System_LibraryLoader",
     "Win32_System_Memory", "Win32_System_Ole", "Win32_System_Performance", "Win32_System_Pipes",
-    "Win32_System_SystemInformation", "Win32_System_SystemServices", "Win32_System_Threading",
-    "Win32_System_Variant", "Win32_System_WinRT", "Win32_UI_Controls", "Win32_UI_HiDpi",
-    "Win32_UI_Input_Ime", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Shell", "Win32_UI_Shell_Common",
-    "Win32_UI_Shell_PropertiesSystem", "Win32_UI_WindowsAndMessaging", "Win32_Media"]
+    "Win32_System_RestartManager", "Win32_System_SystemInformation", "Win32_System_SystemServices",
+    "Win32_System_Threading", "Win32_System_Variant", "Win32_System_WinRT", "Win32_UI_Controls",
+    "Win32_UI_HiDpi", "Win32_UI_Input_Ime", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Input_Pointer",
+    "Win32_UI_Shell", "Win32_UI_Shell_Common", "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_WindowsAndMessaging", "Win32_Media"]
 
 
     [target."cfg(target_os = \"windows\")".dependencies.scap]
@@ -5313,16 +5710,6 @@
   contents: '{"package": "12101ecc8225ea6d675bc70263074eab6169079621c2186fe0c66590b2df9681",
     "files": {}}'
   dest: cargo/vendor/grid-0.18.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/group/group-0.13.0.crate
-  sha256: f0f9ef7462f7c099f518d754361858f86d8a07af53ba9af0fe635bbccb151a63
-  dest: cargo/vendor/group-0.13.0
-- type: inline
-  contents: '{"package": "f0f9ef7462f7c099f518d754361858f86d8a07af53ba9af0fe635bbccb151a63",
-    "files": {}}'
-  dest: cargo/vendor/group-0.13.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -5566,7 +5953,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/http_client" "cargo/vendor/http_client"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/http_client" "cargo/vendor/http_client"
 - type: inline
   contents: '[package]
 
@@ -5636,15 +6023,9 @@
 
     anyhow = "1.0.86"
 
-    async-fs = "2.1"
-
-    async-tar = "0.5.1"
-
     bytes = "1.0"
 
-    derive_more = "0.99.17"
-
-    futures = "0.3"
+    futures = "0.3.32"
 
     http-body = "1.0"
 
@@ -5654,10 +6035,6 @@
 
     serde_urlencoded = "0.7"
 
-    sha2 = "0.10"
-
-    tempfile = "3.20.0"
-
     url = "2.2"
 
 
@@ -5665,7 +6042,15 @@
 
     version = "0.4"
 
-    features = ["gzip", "futures-io"]
+    features = ["bzip2", "gzip", "futures-io"]
+
+
+    [dependencies.derive_more]
+
+    version = "2.1.1"
+
+    features = ["add", "add_assign", "deref", "deref_mut", "display", "from_str",
+    "mul", "mul_assign", "not"]
 
 
     [dependencies.log]
@@ -5689,7 +6074,18 @@
     features = ["preserve_order", "raw_value"]
 
 
-    [dependencies.util]
+    [target."cfg(not(target_family = \"wasm\"))".dependencies]
+
+    async-fs = "2.1"
+
+    async-tar = "0.5.1"
+
+    sha2 = "0.10"
+
+    tempfile = "3.20.0"
+
+
+    [target."cfg(not(target_family = \"wasm\"))".dependencies.util]
 
     path = "crates/util"
 
@@ -5962,16 +6358,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/indicatif/indicatif-0.18.4.crate
-  sha256: 25470f23803092da7d239834776d653104d551bc4d7eacaf31e6837854b8e9eb
-  dest: cargo/vendor/indicatif-0.18.4
-- type: inline
-  contents: '{"package": "25470f23803092da7d239834776d653104d551bc4d7eacaf31e6837854b8e9eb",
-    "files": {}}'
-  dest: cargo/vendor/indicatif-0.18.4
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/inotify/inotify-0.10.2.crate
   sha256: fdd168d97690d0b8c412d6b6c10360277f4d7ee495c5d0d5d5fe0854923255cc
   dest: cargo/vendor/inotify-0.10.2
@@ -6162,26 +6548,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/jiff/jiff-0.2.21.crate
-  sha256: b3e3d65f018c6ae946ab16e80944b97096ed73c35b221d1c478a6c81d8f57940
-  dest: cargo/vendor/jiff-0.2.21
-- type: inline
-  contents: '{"package": "b3e3d65f018c6ae946ab16e80944b97096ed73c35b221d1c478a6c81d8f57940",
-    "files": {}}'
-  dest: cargo/vendor/jiff-0.2.21
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/jiff-static/jiff-static-0.2.21.crate
-  sha256: a17c2b211d863c7fde02cbea8a3c1a439b98e109286554f2860bdded7ff83818
-  dest: cargo/vendor/jiff-static-0.2.21
-- type: inline
-  contents: '{"package": "a17c2b211d863c7fde02cbea8a3c1a439b98e109286554f2860bdded7ff83818",
-    "files": {}}'
-  dest: cargo/vendor/jiff-static-0.2.21
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/jni/jni-0.21.1.crate
   sha256: 1a87aa2bb7d2af34197c04845522473242e1aa17c12f4935d5856491a7fb8c97
   dest: cargo/vendor/jni-0.21.1
@@ -6229,16 +6595,6 @@
   contents: '{"package": "8cfc352a66ba903c23239ef51e809508b6fc2b0f90e3476ac7a9ff47e863ae95",
     "files": {}}'
   dest: cargo/vendor/junction-1.4.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/keyring/keyring-3.6.3.crate
-  sha256: eebcc3aff044e5944a8fbaf69eb277d11986064cba30c468730e8b9909fb551c
-  dest: cargo/vendor/keyring-3.6.3
-- type: inline
-  contents: '{"package": "eebcc3aff044e5944a8fbaf69eb277d11986064cba30c468730e8b9909fb551c",
-    "files": {}}'
-  dest: cargo/vendor/keyring-3.6.3
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -6362,23 +6718,23 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/libc/libc-0.2.182.crate
-  sha256: 6800badb6cb2082ffd7b6a67e6125bb39f18782f793520caee8cb8846be06112
-  dest: cargo/vendor/libc-0.2.182
+  url: https://static.crates.io/crates/libbz2-rs-sys/libbz2-rs-sys-0.2.2.crate
+  sha256: 2c4a545a15244c7d945065b5d392b2d2d7f21526fba56ce51467b06ed445e8f7
+  dest: cargo/vendor/libbz2-rs-sys-0.2.2
 - type: inline
-  contents: '{"package": "6800badb6cb2082ffd7b6a67e6125bb39f18782f793520caee8cb8846be06112",
+  contents: '{"package": "2c4a545a15244c7d945065b5d392b2d2d7f21526fba56ce51467b06ed445e8f7",
     "files": {}}'
-  dest: cargo/vendor/libc-0.2.182
+  dest: cargo/vendor/libbz2-rs-sys-0.2.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/libdbus-sys/libdbus-sys-0.2.7.crate
-  sha256: 328c4789d42200f1eeec05bd86c9c13c7f091d2ba9a6ea35acdf51f31bc0f043
-  dest: cargo/vendor/libdbus-sys-0.2.7
+  url: https://static.crates.io/crates/libc/libc-0.2.183.crate
+  sha256: b5b646652bf6661599e1da8901b3b9522896f01e736bad5f723fe7a3a27f899d
+  dest: cargo/vendor/libc-0.2.183
 - type: inline
-  contents: '{"package": "328c4789d42200f1eeec05bd86c9c13c7f091d2ba9a6ea35acdf51f31bc0f043",
+  contents: '{"package": "b5b646652bf6661599e1da8901b3b9522896f01e736bad5f723fe7a3a27f899d",
     "files": {}}'
-  dest: cargo/vendor/libdbus-sys-0.2.7
+  dest: cargo/vendor/libc-0.2.183
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -6422,6 +6778,26 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/libseccomp/libseccomp-0.4.0.crate
+  sha256: 0e5310a2c5b6ffbc094b5f70a2ca7b79ed36ad90e6f90994b166489a1bce3fcc
+  dest: cargo/vendor/libseccomp-0.4.0
+- type: inline
+  contents: '{"package": "0e5310a2c5b6ffbc094b5f70a2ca7b79ed36ad90e6f90994b166489a1bce3fcc",
+    "files": {}}'
+  dest: cargo/vendor/libseccomp-0.4.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/libseccomp-sys/libseccomp-sys-0.3.0.crate
+  sha256: 60276e2d41bbb68b323e566047a1bfbf952050b157d8b5cdc74c07c1bf4ca3b6
+  dest: cargo/vendor/libseccomp-sys-0.3.0
+- type: inline
+  contents: '{"package": "60276e2d41bbb68b323e566047a1bfbf952050b157d8b5cdc74c07c1bf4ca3b6",
+    "files": {}}'
+  dest: cargo/vendor/libseccomp-sys-0.3.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.36.0.crate
   sha256: 95b4103cffefa72eb8428cb6b47d6627161e51c2739fc5e3b734584157bc642a
   dest: cargo/vendor/libsqlite3-sys-0.36.0
@@ -6439,16 +6815,6 @@
   contents: '{"package": "d4a5ff6bcca6c4867b1c4fd4ef63e4db7436ef363e0ad7531d1558856bae64f4",
     "files": {}}'
   dest: cargo/vendor/linebender_resource_handle-0.1.1
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/linux-keyutils/linux-keyutils-0.2.4.crate
-  sha256: 761e49ec5fd8a5a463f9b84e877c373d888935b71c6be78f3767fe2ae6bed18e
-  dest: cargo/vendor/linux-keyutils-0.2.4
-- type: inline
-  contents: '{"package": "761e49ec5fd8a5a463f9b84e877c373d888935b71c6be78f3767fe2ae6bed18e",
-    "files": {}}'
-  dest: cargo/vendor/linux-keyutils-0.2.4
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -6692,7 +7058,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/media" "cargo/vendor/media"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/media" "cargo/vendor/media"
 - type: inline
   contents: '[package]
 
@@ -6851,16 +7217,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/mini-moka/mini-moka-0.10.3.crate
-  sha256: c325dfab65f261f386debee8b0969da215b3fa0037e74c8a1234db7ba986d803
-  dest: cargo/vendor/mini-moka-0.10.3
-- type: inline
-  contents: '{"package": "c325dfab65f261f386debee8b0969da215b3fa0037e74c8a1234db7ba986d803",
-    "files": {}}'
-  dest: cargo/vendor/mini-moka-0.10.3
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/minimal-lexical/minimal-lexical-0.2.1.crate
   sha256: 68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a
   dest: cargo/vendor/minimal-lexical-0.2.1
@@ -6929,15 +7285,319 @@
     "files": {}}'
   dest: cargo/vendor/mslnk-0.1.8
   dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/naga" "cargo/vendor/naga"
+- type: inline
+  contents: '[package]
+
+    name = "naga"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Shader translator and validator. Part of the wgpu project"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["shader", "SPIR-V", "GLSL", "MSL"]
+
+    license = "MIT OR Apache-2.0"
+
+    exclude = ["bin/**/*", "tests/**/*", "Cargo.lock", "target/**/*"]
+
+    rust-version = "1.87"
+
+
+    [package.metadata.docs.rs]
+
+    all-features = true
+
+
+    [features]
+
+    default = []
+
+    dot-out = []
+
+    glsl-in = ["dep:pp-rs"]
+
+    glsl-out = []
+
+    msl-out = []
+
+    msl-out-if-target-apple = []
+
+    serialize = ["dep:serde", "bitflags/serde", "half/serde", "hashbrown/serde", "indexmap/serde"]
+
+    deserialize = ["dep:serde", "bitflags/serde", "half/serde", "hashbrown/serde",
+    "indexmap/serde"]
+
+    arbitrary = ["dep:arbitrary", "bitflags/arbitrary", "indexmap/arbitrary", "half/arbitrary",
+    "half/std"]
+
+    spv-in = ["dep:petgraph", "petgraph/graphmap", "dep:spirv"]
+
+    spv-out = ["dep:spirv"]
+
+    wgsl-in = ["dep:hexf-parse", "dep:unicode-ident"]
+
+    wgsl-out = []
+
+    hlsl-out = []
+
+    hlsl-out-if-target-windows = []
+
+    termcolor = ["codespan-reporting/termcolor"]
+
+    stderr = ["codespan-reporting/std"]
+
+    fs = []
+
+
+    [dependencies]
+
+    bitflags = "2.9"
+
+    cfg-if = "1"
+
+    log = "0.4.29"
+
+
+    [dependencies.arbitrary]
+
+    features = ["derive"]
+
+    optional = true
+
+    version = "1.4.2"
+
+
+    [dependencies.arrayvec]
+
+    version = "0.7.1"
+
+    default-features = false
+
+
+    [dependencies.bit-set]
+
+    version = "0.9"
+
+    default-features = false
+
+
+    [dependencies.codespan-reporting]
+
+    version = "0.13"
+
+    default-features = false
+
+
+    [dependencies.hashbrown]
+
+    version = "0.16"
+
+    default-features = false
+
+    features = ["default-hasher", "inline-more"]
+
+
+    [dependencies.half]
+
+    features = ["num-traits"]
+
+    version = "2.5"
+
+    default-features = false
+
+
+    [dependencies.rustc-hash]
+
+    version = "1.1"
+
+    default-features = false
+
+
+    [dependencies.indexmap]
+
+    version = "2.11.4"
+
+    default-features = false
+
+
+    [dependencies.libm]
+
+    default-features = false
+
+    version = "0.2.6"
+
+
+    [dependencies.num-traits]
+
+    version = "0.2.16"
+
+    default-features = false
+
+
+    [dependencies.once_cell]
+
+    features = ["alloc", "race"]
+
+    version = "1.21"
+
+    default-features = false
+
+
+    [dependencies.spirv]
+
+    optional = true
+
+    version = "0.4"
+
+
+    [dependencies.thiserror]
+
+    version = "2.0.12"
+
+    default-features = false
+
+
+    [dependencies.serde]
+
+    features = ["alloc", "derive"]
+
+    optional = true
+
+    version = "1.0.225"
+
+    default-features = false
+
+
+    [dependencies.petgraph]
+
+    optional = true
+
+    version = "0.8"
+
+    default-features = false
+
+
+    [dependencies.pp-rs]
+
+    optional = true
+
+    version = "0.2.1"
+
+
+    [dependencies.hexf-parse]
+
+    optional = true
+
+    version = "0.2"
+
+
+    [dependencies.unicode-ident]
+
+    optional = true
+
+    version = "1.0.5"
+
+
+    [build-dependencies]
+
+    cfg_aliases = "0.2.1"
+
+
+    [dev-dependencies]
+
+    diff = "0.1"
+
+    ron = "0.12"
+
+    rspirv = "0.13"
+
+    spirv = "0.4"
+
+    walkdir = "2.3"
+
+
+    [dev-dependencies.env_logger]
+
+    version = "0.11"
+
+    default-features = false
+
+
+    [dev-dependencies.hashbrown]
+
+    features = ["serde", "default-hasher", "inline-more"]
+
+    version = "0.16"
+
+    default-features = false
+
+
+    [dev-dependencies.hlsl-snapshots]
+
+    path = "naga/hlsl-snapshots"
+
+
+    [dev-dependencies.itertools]
+
+    version = "0.14"
+
+
+    [dev-dependencies.naga-test]
+
+    path = "./naga-test"
+
+
+    [dev-dependencies.serde]
+
+    features = ["default", "derive"]
+
+    version = "1.0.225"
+
+    default-features = false
+
+
+    [dev-dependencies.strum]
+
+    version = "0.27.1"
+
+    default-features = false
+
+    features = ["derive"]
+
+
+    [lints.clippy]
+
+    std_instead_of_alloc = "warn"
+
+    std_instead_of_core = "warn"
+
+    alloc_instead_of_core = "warn"
+
+    '
+  dest: cargo/vendor/naga
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/naga
+  dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/naga/naga-28.0.0.crate
-  sha256: 618f667225063219ddfc61251087db8a9aec3c3f0950c916b614e403486f1135
-  dest: cargo/vendor/naga-28.0.0
+  url: https://static.crates.io/crates/naga/naga-29.0.1.crate
+  sha256: aa2630921705b9b01dcdd0b6864b9562ca3c1951eecd0f0c4f5f04f61e412647
+  dest: cargo/vendor/naga-29.0.1
 - type: inline
-  contents: '{"package": "618f667225063219ddfc61251087db8a9aec3c3f0950c916b614e403486f1135",
+  contents: '{"package": "aa2630921705b9b01dcdd0b6864b9562ca3c1951eecd0f0c4f5f04f61e412647",
     "files": {}}'
-  dest: cargo/vendor/naga-28.0.0
+  dest: cargo/vendor/naga-29.0.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -7098,16 +7758,6 @@
   contents: '{"package": "42b8cfee0e339a0337359f3c88165702ac6e600dc01c0cc9579a92d62b08477a",
     "files": {}}'
   dest: cargo/vendor/notify-types-2.1.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/nt-time/nt-time-0.12.1.crate
-  sha256: 5ad6fee094ffe35b67a67b9057d93492f8a2318edd22e1a731c545b8dbecb64e
-  dest: cargo/vendor/nt-time-0.12.1
-- type: inline
-  contents: '{"package": "5ad6fee094ffe35b67a67b9057d93492f8a2318edd22e1a731c545b8dbecb64e",
-    "files": {}}'
-  dest: cargo/vendor/nt-time-0.12.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -7281,16 +7931,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/obfstr/obfstr-0.4.4.crate
-  sha256: d0d354e9a302760d07e025701d40534f17dd1fe4c4db955b4e3bd2907c63bdee
-  dest: cargo/vendor/obfstr-0.4.4
-- type: inline
-  contents: '{"package": "d0d354e9a302760d07e025701d40534f17dd1fe4c4db955b4e3bd2907c63bdee",
-    "files": {}}'
-  dest: cargo/vendor/obfstr-0.4.4
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/objc/objc-0.2.7.crate
   sha256: 915b1b472bc21c53464d6c8461c9d3af805ba1ef837e1cac254428f4a77177b1
   dest: cargo/vendor/objc-0.2.7
@@ -7428,6 +8068,16 @@
   contents: '{"package": "180788110936d59bab6bd83b6060ffdfffb3b922ba1396b312ae795e1de9d81d",
     "files": {}}'
   dest: cargo/vendor/objc2-io-surface-0.3.2
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/objc2-metal/objc2-metal-0.3.2.crate
+  sha256: a0125f776a10d00af4152d74616409f0d4a2053a6f57fa5b7d6aa2854ac04794
+  dest: cargo/vendor/objc2-metal-0.3.2
+- type: inline
+  contents: '{"package": "a0125f776a10d00af4152d74616409f0d4a2053a6f57fa5b7d6aa2854ac04794",
+    "files": {}}'
+  dest: cargo/vendor/objc2-metal-0.3.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -7651,16 +8301,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/p256/p256-0.13.2.crate
-  sha256: c9863ad85fa8f4460f9c48cb909d38a0d689dba1f6f6988a5e3e0d31071bcd4b
-  dest: cargo/vendor/p256-0.13.2
-- type: inline
-  contents: '{"package": "c9863ad85fa8f4460f9c48cb909d38a0d689dba1f6f6988a5e3e0d31071bcd4b",
-    "files": {}}'
-  dest: cargo/vendor/p256-0.13.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/parking/parking-2.2.1.crate
   sha256: f38d5652c16fde515bb1ecef450ab0f6a219d619a7274976324d5e377f7dceba
   dest: cargo/vendor/parking-2.2.1
@@ -7751,16 +8391,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/pem-rfc7468/pem-rfc7468-0.7.0.crate
-  sha256: 88b39c9bfcfc231068454382784bb460aae594343fb030d46e9f50a645418412
-  dest: cargo/vendor/pem-rfc7468-0.7.0
-- type: inline
-  contents: '{"package": "88b39c9bfcfc231068454382784bb460aae594343fb030d46e9f50a645418412",
-    "files": {}}'
-  dest: cargo/vendor/pem-rfc7468-0.7.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/percent-encoding/percent-encoding-2.3.2.crate
   sha256: 9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220
   dest: cargo/vendor/percent-encoding-2.3.2
@@ -7771,7 +8401,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/tooling/perf" "cargo/vendor/perf"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/tooling/perf" "cargo/vendor/perf"
 - type: inline
   contents: '[package]
 
@@ -7968,16 +8598,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/pkcs8/pkcs8-0.10.2.crate
-  sha256: f950b2377845cebe5cf8b5165cb3cc1a5e0fa5cfa3e1f7f55707d8fd82e0a7b7
-  dest: cargo/vendor/pkcs8-0.10.2
-- type: inline
-  contents: '{"package": "f950b2377845cebe5cf8b5165cb3cc1a5e0fa5cfa3e1f7f55707d8fd82e0a7b7",
-    "files": {}}'
-  dest: cargo/vendor/pkcs8-0.10.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/pkg-config/pkg-config-0.3.32.crate
   sha256: 7edddbd0b52d732b21ad9a5fab5c704c14cd949e5e9a1ec5929a24fded1b904c
   dest: cargo/vendor/pkg-config-0.3.32
@@ -8025,6 +8645,16 @@
   contents: '{"package": "5da3b0203fd7ee5720aa0b5e790b591aa5d3f41c3ed2c34a3a393382198af2f7",
     "files": {}}'
   dest: cargo/vendor/pollster-0.2.5
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/pollster/pollster-0.4.0.crate
+  sha256: 2f3a9f18d041e6d0e102a0a46750538147e5e8992d3b4873aaafee2520b00ce3
+  dest: cargo/vendor/pollster-0.4.0
+- type: inline
+  contents: '{"package": "2f3a9f18d041e6d0e102a0a46750538147e5e8992d3b4873aaafee2520b00ce3",
+    "files": {}}'
+  dest: cargo/vendor/pollster-0.4.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -8128,16 +8758,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/primeorder/primeorder-0.13.6.crate
-  sha256: 353e1ca18966c16d9deb1c69278edbc5f194139612772bd9537af60ac231e1e6
-  dest: cargo/vendor/primeorder-0.13.6
-- type: inline
-  contents: '{"package": "353e1ca18966c16d9deb1c69278edbc5f194139612772bd9537af60ac231e1e6",
-    "files": {}}'
-  dest: cargo/vendor/primeorder-0.13.6
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/proc-macro-crate/proc-macro-crate-3.4.0.crate
   sha256: 219cb19e96be00ab2e37d6e299658a0cfa83e52429179969b0f0121b4ac46983
   dest: cargo/vendor/proc-macro-crate-3.4.0
@@ -8205,16 +8825,6 @@
   contents: '{"package": "3852766467df634d74f0b2d7819bf8dc483a0eb2e3b0f50f756f9cfe8b0d18d8",
     "files": {}}'
   dest: cargo/vendor/psm-0.1.30
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/pulldown-cmark/pulldown-cmark-0.9.6.crate
-  sha256: 57206b407293d2bcd3af849ce869d52068623f19e1b5ff8e8778e3309439682b
-  dest: cargo/vendor/pulldown-cmark-0.9.6
-- type: inline
-  contents: '{"package": "57206b407293d2bcd3af849ce869d52068623f19e1b5ff8e8778e3309439682b",
-    "files": {}}'
-  dest: cargo/vendor/pulldown-cmark-0.9.6
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -8428,6 +9038,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/raw-window-metal/raw-window-metal-1.1.0.crate
+  sha256: 40d213455a5f1dc59214213c7330e074ddf8114c9a42411eb890c767357ce135
+  dest: cargo/vendor/raw-window-metal-1.1.0
+- type: inline
+  contents: '{"package": "40d213455a5f1dc59214213c7330e074ddf8114c9a42411eb890c767357ce135",
+    "files": {}}'
+  dest: cargo/vendor/raw-window-metal-1.1.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/rayon/rayon-1.11.0.crate
   sha256: 368f01d005bf8fd9b1206fb6fa653e6c4a81ceb1466406b81792d87c5677a58f
   dest: cargo/vendor/rayon-1.11.0
@@ -8558,7 +9178,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/refineable" "cargo/vendor/refineable"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/refineable" "cargo/vendor/refineable"
 - type: inline
   contents: '[package]
 
@@ -8713,16 +9333,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/rfc6979/rfc6979-0.4.0.crate
-  sha256: f8dd2a808d456c4a54e300a23e9f5a67e122c3024119acbfd73e3bf664491cb2
-  dest: cargo/vendor/rfc6979-0.4.0
-- type: inline
-  contents: '{"package": "f8dd2a808d456c4a54e300a23e9f5a67e122c3024119acbfd73e3bf664491cb2",
-    "files": {}}'
-  dest: cargo/vendor/rfc6979-0.4.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/rgb/rgb-0.8.53.crate
   sha256: 47b34b781b31e5d73e9fbc8689c70551fd1ade9a19e3e28cfec8580a79290cc4
   dest: cargo/vendor/rgb-0.8.53
@@ -8833,6 +9443,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/rust-i18n/rust-i18n-4.0.0.crate
+  sha256: 21031bf5e6f2c0ae745d831791c403608e99a8bd3776c7e5e5535acd70c3b7ba
+  dest: cargo/vendor/rust-i18n-4.0.0
+- type: inline
+  contents: '{"package": "21031bf5e6f2c0ae745d831791c403608e99a8bd3776c7e5e5535acd70c3b7ba",
+    "files": {}}'
+  dest: cargo/vendor/rust-i18n-4.0.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/rust-i18n-macro/rust-i18n-macro-3.1.5.crate
   sha256: 22baf7d7f56656d23ebe24f6bb57a5d40d2bce2a5f1c503e692b5b2fa450f965
   dest: cargo/vendor/rust-i18n-macro-3.1.5
@@ -8843,6 +9463,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/rust-i18n-macro/rust-i18n-macro-4.0.0.crate
+  sha256: 51fe5295763b358606f7ca26a564e20f4469775a57ec1f09431249a33849ff52
+  dest: cargo/vendor/rust-i18n-macro-4.0.0
+- type: inline
+  contents: '{"package": "51fe5295763b358606f7ca26a564e20f4469775a57ec1f09431249a33849ff52",
+    "files": {}}'
+  dest: cargo/vendor/rust-i18n-macro-4.0.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/rust-i18n-support/rust-i18n-support-3.1.5.crate
   sha256: 940ed4f52bba4c0152056d771e563b7133ad9607d4384af016a134b58d758f19
   dest: cargo/vendor/rust-i18n-support-3.1.5
@@ -8850,6 +9480,16 @@
   contents: '{"package": "940ed4f52bba4c0152056d771e563b7133ad9607d4384af016a134b58d758f19",
     "files": {}}'
   dest: cargo/vendor/rust-i18n-support-3.1.5
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/rust-i18n-support/rust-i18n-support-4.0.0.crate
+  sha256: 69bcc115c8eea2803aa3d85362e339776f4988a0349f2f475af572e497443f6f
+  dest: cargo/vendor/rust-i18n-support-4.0.0
+- type: inline
+  contents: '{"package": "69bcc115c8eea2803aa3d85362e339776f4988a0349f2f475af572e497443f6f",
+    "files": {}}'
+  dest: cargo/vendor/rust-i18n-support-4.0.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -9043,7 +9683,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/scheduler" "cargo/vendor/scheduler"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/scheduler" "cargo/vendor/scheduler"
 - type: inline
   contents: '[package]
 
@@ -9115,11 +9755,13 @@
 
     flume = "0.11"
 
-    futures = "0.3"
+    futures = "0.3.32"
 
     parking_lot = "0.12.1"
 
     rand = "0.9"
+
+    web-time = "1.1.0"
 
 
     [dependencies.chrono]
@@ -9214,26 +9856,6 @@
   contents: '{"package": "1c107b6f4780854c8b126e228ea8869f4d7b71260f962fefb57b996b8959ba6b",
     "files": {}}'
   dest: cargo/vendor/seahash-4.1.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/sec1/sec1-0.7.3.crate
-  sha256: d3e97a565f76233a6003f9f5c54be1d9c5bdfa3eccfb189469f11ec4901c47dc
-  dest: cargo/vendor/sec1-0.7.3
-- type: inline
-  contents: '{"package": "d3e97a565f76233a6003f9f5c54be1d9c5bdfa3eccfb189469f11ec4901c47dc",
-    "files": {}}'
-  dest: cargo/vendor/sec1-0.7.3
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/security-framework/security-framework-2.11.1.crate
-  sha256: 897b2245f0b511c87893af39b033e5ca9cce68824c4d7e7630b5a1d339658d02
-  dest: cargo/vendor/security-framework-2.11.1
-- type: inline
-  contents: '{"package": "897b2245f0b511c87893af39b033e5ca9cce68824c4d7e7630b5a1d339658d02",
-    "files": {}}'
-  dest: cargo/vendor/security-framework-2.11.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -9537,16 +10159,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/signature/signature-2.2.0.crate
-  sha256: 77549399552de45a898a580c1b41d445bf730df867cc44e6c0233bbc4b8329de
-  dest: cargo/vendor/signature-2.2.0
-- type: inline
-  contents: '{"package": "77549399552de45a898a580c1b41d445bf730df867cc44e6c0233bbc4b8329de",
-    "files": {}}'
-  dest: cargo/vendor/signature-2.2.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/simd-adler32/simd-adler32-0.3.8.crate
   sha256: e320a6c5ad31d271ad523dcf3ad13e2767ad8b1cb8f047f75a8aeaf8da139da2
   dest: cargo/vendor/simd-adler32-0.3.8
@@ -9584,16 +10196,6 @@
   contents: '{"package": "b2aa850e253778c88a04c3d7323b043aeda9d3e30d5971937c1855769763678e",
     "files": {}}'
   dest: cargo/vendor/siphasher-1.0.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/skeptic/skeptic-0.13.7.crate
-  sha256: 16d23b015676c90a0f01c197bfdc786c20342c73a0afdda9025adb0bc42940a8
-  dest: cargo/vendor/skeptic-0.13.7
-- type: inline
-  contents: '{"package": "16d23b015676c90a0f01c197bfdc786c20342c73a0afdda9025adb0bc42940a8",
-    "files": {}}'
-  dest: cargo/vendor/skeptic-0.13.7
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -9707,23 +10309,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/spirv/spirv-0.3.0+sdk-1.3.268.0.crate
-  sha256: eda41003dc44290527a59b13432d4a0379379fa074b70174882adfbdfd917844
-  dest: cargo/vendor/spirv-0.3.0+sdk-1.3.268.0
+  url: https://static.crates.io/crates/spirv/spirv-0.4.0+sdk-1.4.341.0.crate
+  sha256: d9571ea910ebd84c86af4b3ed27f9dbdc6ad06f17c5f96146b2b671e2976744f
+  dest: cargo/vendor/spirv-0.4.0+sdk-1.4.341.0
 - type: inline
-  contents: '{"package": "eda41003dc44290527a59b13432d4a0379379fa074b70174882adfbdfd917844",
+  contents: '{"package": "d9571ea910ebd84c86af4b3ed27f9dbdc6ad06f17c5f96146b2b671e2976744f",
     "files": {}}'
-  dest: cargo/vendor/spirv-0.3.0+sdk-1.3.268.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/spki/spki-0.7.3.crate
-  sha256: d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d
-  dest: cargo/vendor/spki-0.7.3
-- type: inline
-  contents: '{"package": "d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d",
-    "files": {}}'
-  dest: cargo/vendor/spki-0.7.3
+  dest: cargo/vendor/spirv-0.4.0+sdk-1.4.341.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -9877,7 +10469,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/sum_tree" "cargo/vendor/sum_tree"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/sum_tree" "cargo/vendor/sum_tree"
 - type: inline
   contents: '[package]
 
@@ -9945,7 +10537,7 @@
 
     [dependencies]
 
-    arrayvec = "0.7.1"
+    heapless = "0.9.2"
 
     rayon = "1.8"
 
@@ -9964,6 +10556,17 @@
     path = "crates/ztracing"
 
 
+    [dependencies.proptest]
+
+    optional = true
+
+    git = "https://github.com/proptest-rs/proptest"
+
+    rev = "3dca198a8fef1b32e3a66f1e1897c955b4dc5b5b"
+
+    features = ["attr-macro"]
+
+
     [dev-dependencies]
 
     ctor = "0.4.0"
@@ -9971,9 +10574,23 @@
     rand = "0.9"
 
 
+    [dev-dependencies.proptest]
+
+    git = "https://github.com/proptest-rs/proptest"
+
+    rev = "3dca198a8fef1b32e3a66f1e1897c955b4dc5b5b"
+
+    features = ["attr-macro"]
+
+
     [dev-dependencies.zlog]
 
     path = "crates/zlog"
+
+
+    [features]
+
+    test-support = ["proptest"]
 
     '
   dest: cargo/vendor/sum_tree
@@ -10874,16 +11491,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/unit-prefix/unit-prefix-0.5.2.crate
-  sha256: 81e544489bf3d8ef66c953931f56617f423cd4b5494be343d9b9d3dda037b9a3
-  dest: cargo/vendor/unit-prefix-0.5.2
-- type: inline
-  contents: '{"package": "81e544489bf3d8ef66c953931f56617f423cd4b5494be343d9b9d3dda037b9a3",
-    "files": {}}'
-  dest: cargo/vendor/unit-prefix-0.5.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/unsafe-libyaml/unsafe-libyaml-0.2.11.crate
   sha256: 673aac59facbab8a9007c7f6108d11f63b603f7cabff99fabf650fea5c32b861
   dest: cargo/vendor/unsafe-libyaml-0.2.11
@@ -10974,7 +11581,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/util" "cargo/vendor/util"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/util" "cargo/vendor/util"
 - type: inline
   contents: '[package]
 
@@ -11044,15 +11651,11 @@
 
     anyhow = "1.0.86"
 
-    async-fs = "2.1"
-
-    dirs = "4.0"
-
     dunce = "1.0"
 
     futures-lite = "1.13"
 
-    futures = "0.3"
+    futures = "0.3.32"
 
     globset = "0.4"
 
@@ -11061,8 +11664,6 @@
     regex = "1.5"
 
     shlex = "1.3.0"
-
-    smol = "2.0"
 
     take-until = "0.2.0"
 
@@ -11073,10 +11674,6 @@
     url = "2.2"
 
     percent-encoding = "2.3.2"
-
-    walkdir = "2.5"
-
-    which = "6.0.0"
 
 
     [dependencies.async_zip]
@@ -11091,17 +11688,6 @@
     path = "crates/collections"
 
     version = "0.1.0"
-
-
-    [dependencies.git2]
-
-    optional = true
-
-    version = "0.20.1"
-
-    default-features = false
-
-    features = ["vendored-libgit2"]
 
 
     [dependencies.log]
@@ -11120,7 +11706,7 @@
 
     [dependencies.rust-embed]
 
-    version = "8.4"
+    version = "8.11"
 
     features = ["include-exclude"]
 
@@ -11160,6 +11746,35 @@
     path = "crates/util_macros"
 
 
+    [dependencies.gpui_util]
+
+    path = "crates/gpui_util"
+
+
+    [target."cfg(not(target_family = \"wasm\"))".dependencies]
+
+    smol = "2.0"
+
+    which = "6.0.0"
+
+    async-fs = "2.1"
+
+    walkdir = "2.5"
+
+    dirs = "4.0"
+
+
+    [target."cfg(not(target_family = \"wasm\"))".dependencies.git2]
+
+    optional = true
+
+    version = "0.20.1"
+
+    default-features = false
+
+    features = ["vendored-libgit2"]
+
+
     [target."cfg(unix)".dependencies]
 
     command-fds = "0.3.1"
@@ -11185,8 +11800,6 @@
 
 
     [dev-dependencies]
-
-    indoc = "2"
 
     rand = "0.9"
 
@@ -11220,7 +11833,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/util_macros" "cargo/vendor/util_macros"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/util_macros" "cargo/vendor/util_macros"
 - type: inline
   contents: '[package]
 
@@ -11563,6 +12176,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/wasm_thread/wasm_thread-0.3.3.crate
+  sha256: b7516db7f32decdadb1c3b8deb1b7d78b9df7606c5cc2f6241737c2ab3a0258e
+  dest: cargo/vendor/wasm_thread-0.3.3
+- type: inline
+  contents: '{"package": "b7516db7f32decdadb1c3b8deb1b7d78b9df7606c5cc2f6241737c2ab3a0258e",
+    "files": {}}'
+  dest: cargo/vendor/wasm_thread-0.3.3
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/wasmparser/wasmparser-0.244.0.crate
   sha256: 47b807c72e1bac69382b3a6fb3dbe8ea4c0ed87ff5629b8685ae6b9a611028fe
   dest: cargo/vendor/wasmparser-0.244.0
@@ -11721,75 +12344,1552 @@
     "files": {}}'
   dest: cargo/vendor/wfd-0.1.8
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu/wgpu-28.0.0.crate
-  sha256: f9cb534d5ffd109c7d1135f34cdae29e60eab94855a625dcfe1705f8bc7ad79f
-  dest: cargo/vendor/wgpu-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu" "cargo/vendor/wgpu"
 - type: inline
-  contents: '{"package": "f9cb534d5ffd109c7d1135f34cdae29e60eab94855a625dcfe1705f8bc7ad79f",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-28.0.0
+  contents: '[package]
+
+    name = "wgpu"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Cross-platform, safe, pure-rust graphics API"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    readme = "../README.md"
+
+    exclude = ["Cargo.lock"]
+
+    rust-version = "1.87.0"
+
+
+    [package.metadata.docs.rs]
+
+    all-features = true
+
+    rustdoc-args = ["--cfg", "docsrs"]
+
+    targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc",
+    "wasm32-unknown-unknown"]
+
+
+    [package.metadata.cargo-machete]
+
+    ignored = ["cfg_aliases"]
+
+
+    [lib]
+
+
+    [features]
+
+    default = ["std", "parking_lot", "dx12", "metal", "gles", "vulkan", "wgsl", "webgpu"]
+
+    dx12 = ["wgpu-core?/dx12"]
+
+    metal = ["wgpu-core?/metal"]
+
+    vulkan = ["wgpu-core?/vulkan"]
+
+    gles = ["wgpu-core?/gles"]
+
+    webgpu = ["web", "naga?/wgsl-out", "dep:wasm-bindgen-futures", "web-sys/Document",
+    "web-sys/Event", "web-sys/Navigator", "web-sys/NodeList", "web-sys/Window", "web-sys/WorkerGlobalScope",
+    "web-sys/WorkerNavigator"]
+
+    angle = ["wgpu-core?/angle"]
+
+    vulkan-portability = ["wgpu-core?/vulkan-portability"]
+
+    webgl = ["web", "wgpu-core/webgl", "dep:wgpu-hal", "dep:smallvec"]
+
+    noop = ["wgpu-core/noop", "dep:wgpu-hal", "dep:smallvec"]
+
+    custom = []
+
+    spirv = ["naga/spv-in", "wgpu-core?/spirv"]
+
+    glsl = ["naga/glsl-in", "wgpu-core?/glsl"]
+
+    wgsl = ["wgpu-core?/wgsl"]
+
+    naga-ir = ["dep:naga"]
+
+    strict_asserts = ["wgpu-core?/strict_asserts", "wgpu-types/strict_asserts"]
+
+    serde = ["wgpu-core?/serde", "wgpu-types/serde"]
+
+    trace = ["serde", "wgpu-core?/trace"]
+
+    static-dxc = ["wgpu-core?/static-dxc"]
+
+    counters = ["wgpu-core?/counters"]
+
+    fragile-send-sync-non-atomic-wasm = ["wgpu-core?/fragile-send-sync-non-atomic-wasm",
+    "wgpu-types/fragile-send-sync-non-atomic-wasm"]
+
+    web = ["dep:wasm-bindgen", "dep:js-sys", "dep:web-sys", "wgpu-types/web"]
+
+    std = ["raw-window-handle/std", "wgpu-types/std", "wgpu-core?/std", "js-sys?/std",
+    "web-sys?/std", "wasm-bindgen?/std", "wasm-bindgen-futures?/std"]
+
+    parking_lot = ["dep:parking_lot"]
+
+
+    [dependencies]
+
+    bitflags = "2.9"
+
+    cfg-if = "1"
+
+    document-features = "0.2.10"
+
+    log = "0.4.29"
+
+    static_assertions = "1.1"
+
+
+    [dependencies.naga]
+
+    optional = true
+
+    features = ["termcolor"]
+
+    version = "29.0.0"
+
+    path = "./naga"
+
+
+    [dependencies.wgpu-core]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-core"
+
+
+    [dependencies.wgpu-types]
+
+    version = "29.0.0"
+
+    path = "./wgpu-types"
+
+    default-features = false
+
+
+    [dependencies.arrayvec]
+
+    version = "0.7.1"
+
+    default-features = false
+
+
+    [dependencies.bytemuck]
+
+    version = "1.22"
+
+    features = ["extern_crate_alloc", "min_const_generics"]
+
+
+    [dependencies.hashbrown]
+
+    version = "0.16"
+
+    default-features = false
+
+    features = ["default-hasher", "inline-more"]
+
+
+    [dependencies.parking_lot]
+
+    optional = true
+
+    version = "0.12.3"
+
+
+    [dependencies.profiling]
+
+    version = "1.0.1"
+
+    default-features = false
+
+
+    [dependencies.raw-window-handle]
+
+    features = ["alloc"]
+
+    version = "0.6.2"
+
+    default-features = false
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies]
+
+    smallvec = "1.14"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.wgpu-core]
+
+    features = ["renderdoc", "wgsl", "portable-atomic"]
+
+    version = "29.0.0"
+
+    path = "./wgpu-core"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.wgpu-hal]
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.js-sys]
+
+    optional = true
+
+    version = "0.3.85"
+
+    default-features = false
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.wasm-bindgen]
+
+    optional = true
+
+    version = "0.2.108"
+
+    default-features = false
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.web-sys]
+
+    optional = true
+
+    features = ["HtmlCanvasElement", "OffscreenCanvas"]
+
+    version = "0.3.85"
+
+    default-features = false
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.wgpu-core]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-core"
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.wgpu-hal]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.smallvec]
+
+    optional = true
+
+    version = "1.14"
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.wasm-bindgen-futures]
+
+    optional = true
+
+    version = "0.4.58"
+
+    default-features = false
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies]
+
+    smallvec = "1.14"
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies.wgpu-core]
+
+    version = "29.0.0"
+
+    path = "./wgpu-core"
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies.wgpu-hal]
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+
+    [target."cfg(not(target_has_atomic = \"64\"))".dependencies]
+
+    portable-atomic = "1.10"
+
+
+    [dev-dependencies.bytemuck]
+
+    version = "1.22"
+
+    features = ["extern_crate_alloc", "min_const_generics"]
+
+
+    [build-dependencies]
+
+    cfg_aliases = "0.2.1"
+
+    '
+  dest: cargo/vendor/wgpu
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu-core/wgpu-core-28.0.0.crate
-  sha256: 8bb4c8b5db5f00e56f1f08869d870a0dff7c8bc7ebc01091fec140b0cf0211a9
-  dest: cargo/vendor/wgpu-core-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-core" "cargo/vendor/wgpu-core"
 - type: inline
-  contents: '{"package": "8bb4c8b5db5f00e56f1f08869d870a0dff7c8bc7ebc01091fec140b0cf0211a9",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-core-28.0.0
+  contents: '[package]
+
+    name = "wgpu-core"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Core implementation logic of wgpu, the cross-platform, safe, pure-rust
+    graphics API"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    rust-version = "1.87"
+
+
+    [package.metadata.docs.rs]
+
+    all-features = true
+
+    rustdoc-args = ["--cfg", "docsrs"]
+
+    targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc",
+    "wasm32-unknown-unknown"]
+
+
+    [package.metadata.cargo-machete]
+
+    ignored = ["cfg_aliases"]
+
+
+    [lints.rust.unexpected_cfgs]
+
+    level = "warn"
+
+    check-cfg = ["cfg(wgpu_validate_locks)"]
+
+
+    [lib]
+
+
+    [features]
+
+    default = ["std"]
+
+    api_log_info = []
+
+    resource_log_info = []
+
+    strict_asserts = ["wgpu-types/strict_asserts"]
+
+    observe_locks = ["std", "dep:ron", "serde/serde_derive"]
+
+    serde = ["dep:serde", "wgpu-types/serde", "arrayvec/serde", "hashbrown/serde",
+    "smallvec/serde", "macro_rules_attribute"]
+
+    trace = ["serde", "std", "dep:ron", "naga/serialize", "wgpu-types/trace"]
+
+    replay = ["serde", "naga/deserialize"]
+
+    wgsl = ["naga/wgsl-in"]
+
+    glsl = ["naga/glsl-in"]
+
+    spirv = ["naga/spv-in"]
+
+    counters = ["wgpu-types/counters"]
+
+    fragile-send-sync-non-atomic-wasm = ["wgpu-hal/fragile-send-sync-non-atomic-wasm"]
+
+    std = []
+
+    static-dxc = ["wgpu-hal/static-dxc"]
+
+    portable-atomic = ["dep:portable-atomic", "wgpu-hal/portable-atomic"]
+
+    dx12 = ["wgpu-core-deps-windows-linux-android/dx12"]
+
+    metal = ["wgpu-core-deps-apple/metal"]
+
+    vulkan = ["wgpu-core-deps-windows-linux-android/vulkan"]
+
+    gles = ["wgpu-core-deps-windows-linux-android/gles", "wgpu-core-deps-emscripten/gles"]
+
+    webgl = ["wgpu-core-deps-wasm/webgl", "wgpu-types/web"]
+
+    angle = ["wgpu-core-deps-apple/angle"]
+
+    vulkan-portability = ["wgpu-core-deps-apple/vulkan-portability"]
+
+    renderdoc = ["wgpu-core-deps-windows-linux-android/renderdoc"]
+
+    noop = []
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.wgpu-core-deps-apple]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-core/platform-deps/apple"
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies.wgpu-core-deps-emscripten]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-core/platform-deps/emscripten"
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.wgpu-core-deps-wasm]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-core/platform-deps/wasm"
+
+
+    [target."cfg(any(windows, target_os = \"linux\", target_os = \"android\", target_os
+    = \"freebsd\"))".dependencies.wgpu-core-deps-windows-linux-android]
+
+    optional = true
+
+    version = "29.0.0"
+
+    path = "./wgpu-core/platform-deps/windows-linux-android"
+
+
+    [target."cfg(not(target_has_atomic = \"64\"))".dependencies.portable-atomic]
+
+    optional = true
+
+    version = "1.10"
+
+
+    [dependencies]
+
+    bitflags = "2.9"
+
+    document-features = "0.2.10"
+
+    log = "0.4.29"
+
+    parking_lot = "0.12.3"
+
+    smallvec = "1.14"
+
+
+    [dependencies.naga]
+
+    version = "29.0.0"
+
+    path = "./naga"
+
+
+    [dependencies.wgpu-naga-bridge]
+
+    version = "29.0.0"
+
+    path = "./wgpu-naga-bridge"
+
+
+    [dependencies.wgpu-hal]
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+
+    [dependencies.wgpu-types]
+
+    version = "29.0.0"
+
+    path = "./wgpu-types"
+
+    default-features = false
+
+
+    [dependencies.arrayvec]
+
+    version = "0.7.1"
+
+    default-features = false
+
+
+    [dependencies.bit-vec]
+
+    version = "0.9"
+
+    default-features = false
+
+
+    [dependencies.bit-set]
+
+    version = "0.9"
+
+    default-features = false
+
+
+    [dependencies.bytemuck]
+
+    version = "1.22"
+
+    features = ["extern_crate_alloc", "min_const_generics"]
+
+
+    [dependencies.hashbrown]
+
+    version = "0.16"
+
+    default-features = false
+
+    features = ["default-hasher", "inline-more"]
+
+
+    [dependencies.indexmap]
+
+    version = "2.11.4"
+
+    default-features = false
+
+
+    [dependencies.macro_rules_attribute]
+
+    optional = true
+
+    version = "0.2"
+
+
+    [dependencies.once_cell]
+
+    features = ["std"]
+
+    version = "1.21"
+
+    default-features = false
+
+
+    [dependencies.profiling]
+
+    default-features = false
+
+    version = "1.0.1"
+
+
+    [dependencies.raw-window-handle]
+
+    version = "0.6.2"
+
+    default-features = false
+
+
+    [dependencies.ron]
+
+    optional = true
+
+    version = "0.12"
+
+
+    [dependencies.rustc-hash]
+
+    version = "1.1"
+
+    default-features = false
+
+
+    [dependencies.serde]
+
+    features = ["default", "derive"]
+
+    optional = true
+
+    version = "1.0.225"
+
+    default-features = false
+
+
+    [dependencies.thiserror]
+
+    version = "2.0.12"
+
+    default-features = false
+
+
+    [build-dependencies]
+
+    cfg_aliases = "0.2.1"
+
+    '
+  dest: cargo/vendor/wgpu-core
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-core
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu-core-deps-apple/wgpu-core-deps-apple-28.0.0.crate
-  sha256: 87b7b696b918f337c486bf93142454080a32a37832ba8a31e4f48221890047da
-  dest: cargo/vendor/wgpu-core-deps-apple-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-core/platform-deps/apple"
+    "cargo/vendor/wgpu-core-deps-apple"
 - type: inline
-  contents: '{"package": "87b7b696b918f337c486bf93142454080a32a37832ba8a31e4f48221890047da",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-core-deps-apple-28.0.0
+  contents: '[package]
+
+    name = "wgpu-core-deps-apple"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Feature unification helper crate for Apple platforms"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    readme = "README.md"
+
+    rust-version = "1.76"
+
+
+    [features]
+
+    metal = ["wgpu-hal/metal"]
+
+    angle = ["wgpu-hal/gles", "wgpu-hal/renderdoc"]
+
+    vulkan-portability = ["wgpu-hal/vulkan", "wgpu-hal/renderdoc"]
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.wgpu-hal]
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+    '
+  dest: cargo/vendor/wgpu-core-deps-apple
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-core-deps-apple
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu-core-deps-emscripten/wgpu-core-deps-emscripten-28.0.0.crate
-  sha256: 34b251c331f84feac147de3c4aa3aa45112622a95dd7ee1b74384fa0458dbd79
-  dest: cargo/vendor/wgpu-core-deps-emscripten-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-core/platform-deps/emscripten"
+    "cargo/vendor/wgpu-core-deps-emscripten"
 - type: inline
-  contents: '{"package": "34b251c331f84feac147de3c4aa3aa45112622a95dd7ee1b74384fa0458dbd79",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-core-deps-emscripten-28.0.0
+  contents: '[package]
+
+    name = "wgpu-core-deps-emscripten"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Feature unification helper crate for the Emscripten platform"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    readme = "README.md"
+
+    rust-version = "1.76"
+
+
+    [features]
+
+    gles = ["wgpu-hal/gles"]
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies.wgpu-hal]
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+    '
+  dest: cargo/vendor/wgpu-core-deps-emscripten
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-core-deps-emscripten
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu-core-deps-windows-linux-android/wgpu-core-deps-windows-linux-android-28.0.0.crate
-  sha256: 68ca976e72b2c9964eb243e281f6ce7f14a514e409920920dcda12ae40febaae
-  dest: cargo/vendor/wgpu-core-deps-windows-linux-android-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-core/platform-deps/windows-linux-android"
+    "cargo/vendor/wgpu-core-deps-windows-linux-android"
 - type: inline
-  contents: '{"package": "68ca976e72b2c9964eb243e281f6ce7f14a514e409920920dcda12ae40febaae",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-core-deps-windows-linux-android-28.0.0
+  contents: '[package]
+
+    name = "wgpu-core-deps-windows-linux-android"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Feature unification helper crate for the Windows/Linux/Android
+    platforms"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    readme = "README.md"
+
+    rust-version = "1.76"
+
+
+    [features]
+
+    gles = ["wgpu-hal/gles"]
+
+    vulkan = ["wgpu-hal/vulkan"]
+
+    dx12 = ["wgpu-hal/dx12"]
+
+    renderdoc = ["wgpu-hal/renderdoc"]
+
+
+    [target."cfg(any(windows, target_os = \"linux\", target_os = \"android\", target_os
+    = \"freebsd\", target_os = \"netbsd\"))".dependencies.wgpu-hal]
+
+    version = "29.0.0"
+
+    path = "./wgpu-hal"
+
+    '
+  dest: cargo/vendor/wgpu-core-deps-windows-linux-android
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-core-deps-windows-linux-android
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu-hal/wgpu-hal-28.0.0.crate
-  sha256: 293080d77fdd14d6b08a67c5487dfddbf874534bb7921526db56a7b75d7e3bef
-  dest: cargo/vendor/wgpu-hal-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-hal" "cargo/vendor/wgpu-hal"
 - type: inline
-  contents: '{"package": "293080d77fdd14d6b08a67c5487dfddbf874534bb7921526db56a7b75d7e3bef",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-hal-28.0.0
+  contents: '[package]
+
+    name = "wgpu-hal"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Hardware abstraction layer for wgpu, the cross-platform, safe,
+    pure-rust graphics API"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    rust-version = "1.87"
+
+
+    [package.metadata.docs.rs]
+
+    features = ["metal", "vulkan", "gles", "renderdoc"]
+
+    rustdoc-args = ["--cfg", "docsrs"]
+
+    targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc",
+    "wasm32-unknown-unknown"]
+
+
+    [package.metadata.cargo-machete]
+
+    ignored = ["cfg_aliases"]
+
+
+    [lints.rust.unexpected_cfgs]
+
+    level = "warn"
+
+    check-cfg = ["cfg(feature, values(\"cargo-clippy\"))", "cfg(web_sys_unstable_apis)"]
+
+
+    [lib]
+
+
+    [features]
+
+    metal = ["naga/msl-out", "dep:arrayvec", "dep:block2", "dep:bytemuck", "dep:hashbrown",
+    "dep:libc", "dep:objc2", "dep:objc2-core-foundation", "dep:objc2-foundation",
+    "dep:objc2-metal", "dep:objc2-quartz-core", "dep:parking_lot", "dep:profiling",
+    "dep:smallvec", "dep:raw-window-metal"]
+
+    vulkan = ["naga/spv-out", "dep:android_system_properties", "dep:arrayvec", "dep:ash",
+    "dep:bytemuck", "dep:gpu-descriptor", "dep:hashbrown", "dep:libc", "dep:libloading",
+    "dep:ordered-float", "dep:parking_lot", "dep:profiling", "dep:raw-window-metal",
+    "dep:smallvec", "dep:windows", "gpu-allocator/vulkan", "windows/Win32"]
+
+    gles = ["naga/glsl-out", "dep:arrayvec", "dep:bytemuck", "dep:glow", "dep:glutin_wgl_sys",
+    "dep:hashbrown", "dep:js-sys", "dep:khronos-egl", "dep:wayland-sys", "dep:libloading",
+    "dep:ndk-sys", "dep:objc2", "dep:parking_lot", "dep:profiling", "dep:wasm-bindgen",
+    "dep:web-sys", "wgpu-types/web", "windows/Win32_Graphics_OpenGL", "windows/Win32_Graphics_Gdi",
+    "windows/Win32_System_LibraryLoader", "windows/Win32_UI_WindowsAndMessaging"]
+
+    dx12 = ["naga/hlsl-out", "dep:arrayvec", "dep:bit-set", "dep:bytemuck", "dep:hashbrown",
+    "dep:libloading", "dep:ordered-float", "dep:once_cell", "dep:parking_lot", "dep:profiling",
+    "dep:range-alloc", "dep:windows-core", "dep:gpu-allocator", "gpu-allocator/d3d12",
+    "windows/Win32_Devices_DeviceAndDriverInstallation", "windows/Win32_Graphics_Direct3D_Fxc",
+    "windows/Win32_Graphics_Direct3D_Dxc", "windows/Win32_Graphics_Direct3D", "windows/Win32_Graphics_Direct3D12",
+    "windows/Win32_Graphics_DirectComposition", "windows/Win32_Graphics_Dxgi_Common",
+    "windows/Win32_Security", "windows/Win32_System_Diagnostics_Debug", "windows/Win32_System_Kernel",
+    "windows/Win32_System_Performance", "windows/Win32_System_Threading", "windows/Win32_UI_WindowsAndMessaging"]
+
+    static-dxc = ["dep:mach-dxcompiler-rs"]
+
+    renderdoc = ["dep:libloading", "dep:renderdoc-sys"]
+
+    fragile-send-sync-non-atomic-wasm = ["wgpu-types/fragile-send-sync-non-atomic-wasm"]
+
+    portable-atomic = ["dep:portable-atomic", "dep:portable-atomic-util"]
+
+    device_lost_panic = []
+
+    internal_error_panic = []
+
+    validation_canary = ["dep:parking_lot"]
+
+
+    [[example]]
+
+    name = "halmark"
+
+
+    [[example]]
+
+    name = "raw-gles"
+
+    required-features = ["gles"]
+
+
+    [dependencies]
+
+    bitflags = "2.9"
+
+    cfg-if = "1"
+
+    log = "0.4.29"
+
+
+    [dependencies.naga]
+
+    version = "29.0.0"
+
+    path = "./naga"
+
+
+    [dependencies.wgpu-naga-bridge]
+
+    version = "29.0.0"
+
+    path = "./wgpu-naga-bridge"
+
+
+    [dependencies.wgpu-types]
+
+    default-features = false
+
+    version = "29.0.0"
+
+    path = "./wgpu-types"
+
+
+    [dependencies.parking_lot]
+
+    optional = true
+
+    version = "0.12.3"
+
+
+    [dependencies.raw-window-handle]
+
+    version = "0.6.2"
+
+    default-features = false
+
+
+    [dependencies.thiserror]
+
+    version = "2.0.12"
+
+    default-features = false
+
+
+    [dependencies.arrayvec]
+
+    optional = true
+
+    version = "0.7.1"
+
+    default-features = false
+
+
+    [dependencies.bytemuck]
+
+    optional = true
+
+    features = ["derive", "extern_crate_alloc", "min_const_generics"]
+
+    version = "1.22"
+
+
+    [dependencies.hashbrown]
+
+    optional = true
+
+    version = "0.16"
+
+    default-features = false
+
+    features = ["default-hasher", "inline-more"]
+
+
+    [dependencies.ordered-float]
+
+    optional = true
+
+    version = ">=3, <6.0"
+
+    default-features = false
+
+
+    [dependencies.profiling]
+
+    optional = true
+
+    default-features = false
+
+    version = "1.0.1"
+
+
+    [dependencies.glow]
+
+    optional = true
+
+    version = "0.17"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.gpu-allocator]
+
+    optional = true
+
+    version = "0.28"
+
+    default-features = false
+
+    features = ["hashbrown"]
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.ash]
+
+    optional = true
+
+    version = "0.38"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.gpu-descriptor]
+
+    optional = true
+
+    version = "0.3.2"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.smallvec]
+
+    optional = true
+
+    features = ["union"]
+
+    version = "1.14"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.khronos-egl]
+
+    features = ["dynamic"]
+
+    optional = true
+
+    version = "6"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.libloading]
+
+    optional = true
+
+    version = "0.8"
+
+
+    [target."cfg(not(target_arch = \"wasm32\"))".dependencies.renderdoc-sys]
+
+    optional = true
+
+    version = "1"
+
+
+    [target."cfg(unix)".dependencies.libc]
+
+    optional = true
+
+    version = "0.2.172"
+
+    default-features = false
+
+
+    [target."cfg(unix)".dependencies.wayland-sys]
+
+    version = "0.31.3"
+
+    features = ["client", "dlopen", "egl"]
+
+    optional = true
+
+
+    [target."cfg(windows)".dependencies.windows]
+
+    optional = true
+
+    version = "0.62"
+
+    default-features = false
+
+
+    [target."cfg(windows)".dependencies.windows-core]
+
+    optional = true
+
+    version = "0.62"
+
+    default-features = false
+
+
+    [target."cfg(windows)".dependencies.bit-set]
+
+    optional = true
+
+    version = "0.9"
+
+    default-features = false
+
+
+    [target."cfg(windows)".dependencies.range-alloc]
+
+    optional = true
+
+    version = "0.1"
+
+
+    [target."cfg(windows)".dependencies.once_cell]
+
+    optional = true
+
+    version = "1.21"
+
+    default-features = false
+
+
+    [target."cfg(windows)".dependencies.glutin_wgl_sys]
+
+    optional = true
+
+    version = "0.6"
+
+
+    [target."cfg(all(windows, not(target_arch = \"aarch64\"), target_env = \"msvc\"))".dependencies.mach-dxcompiler-rs]
+
+    optional = true
+
+    version = "0.1.4"
+
+    default-features = false
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.block2]
+
+    optional = true
+
+    version = "0.6.2"
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.bytemuck]
+
+    optional = true
+
+    version = "1.22"
+
+    features = ["extern_crate_alloc", "min_const_generics"]
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.objc2]
+
+    optional = true
+
+    version = "0.6.3"
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.objc2-core-foundation]
+
+    optional = true
+
+    version = "0.3.2"
+
+    default-features = false
+
+    features = ["std", "CFCGTypes"]
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.objc2-foundation]
+
+    optional = true
+
+    version = "0.3.2"
+
+    default-features = false
+
+    features = ["std", "NSError", "NSProcessInfo", "NSRange", "NSString"]
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.objc2-metal]
+
+    optional = true
+
+    version = "0.3.2"
+
+    default-features = false
+
+    features = ["std", "block2", "MTLAllocation", "MTLBlitCommandEncoder", "MTLBlitPass",
+    "MTLBuffer", "MTLCaptureManager", "MTLCaptureScope", "MTLCommandBuffer", "MTLCommandEncoder",
+    "MTLCommandQueue", "MTLComputeCommandEncoder", "MTLComputePass", "MTLComputePipeline",
+    "MTLCounters", "MTLDepthStencil", "MTLDevice", "MTLDrawable", "MTLEvent", "MTLLibrary",
+    "MTLPipeline", "MTLPixelFormat", "MTLRenderCommandEncoder", "MTLRenderPass", "MTLRenderPipeline",
+    "MTLResource", "MTLSampler", "MTLStageInputOutputDescriptor", "MTLTexture", "MTLTypes",
+    "MTLVertexDescriptor", "MTLAccelerationStructure", "MTLAccelerationStructureTypes",
+    "MTLAccelerationStructureCommandEncoder", "MTLResidencySet"]
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.objc2-quartz-core]
+
+    optional = true
+
+    version = "0.3.2"
+
+    default-features = false
+
+    features = ["std", "objc2-core-foundation", "CALayer", "CAMetalLayer", "objc2-metal"]
+
+
+    [target."cfg(target_vendor = \"apple\")".dependencies.raw-window-metal]
+
+    optional = true
+
+    version = "1.0"
+
+
+    [target."cfg(target_os = \"android\")".dependencies.android_system_properties]
+
+    optional = true
+
+    version = "0.1.1"
+
+
+    [target."cfg(target_os = \"android\")".dependencies.ndk-sys]
+
+    optional = true
+
+    version = "0.6"
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.wasm-bindgen]
+
+    optional = true
+
+    version = "0.2.108"
+
+    default-features = false
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.web-sys]
+
+    optional = true
+
+    features = ["default", "Window", "HtmlCanvasElement", "WebGl2RenderingContext",
+    "OffscreenCanvas"]
+
+    version = "0.3.85"
+
+    default-features = false
+
+
+    [target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.js-sys]
+
+    optional = true
+
+    default-features = false
+
+    version = "0.3.85"
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies.khronos-egl]
+
+    optional = true
+
+    features = ["static", "no-pkg-config"]
+
+    version = "6"
+
+
+    [target."cfg(target_os = \"emscripten\")".dependencies.libloading]
+
+    optional = true
+
+    version = "0.8"
+
+
+    [target."cfg(any(not(target_has_atomic = \"64\"), not(target_has_atomic = \"ptr\")))".dependencies.portable-atomic]
+
+    optional = true
+
+    version = "1.10"
+
+
+    [target."cfg(not(target_has_atomic = \"ptr\"))".dependencies.portable-atomic-util]
+
+    features = ["alloc"]
+
+    optional = true
+
+    version = "0.2.4"
+
+
+    [target."cfg(not(any(target_arch = \"wasm32\", target_os = \"ios\", target_os
+    = \"visionos\", target_env = \"ohos\")))".dev-dependencies.glutin-winit]
+
+    features = ["egl", "wgl", "wayland", "x11"]
+
+    version = "0.5"
+
+    default-features = false
+
+
+    [target."cfg(not(any(target_arch = \"wasm32\", target_os = \"ios\", target_os
+    = \"visionos\", target_env = \"ohos\")))".dev-dependencies.glutin]
+
+    features = ["egl", "wgl", "wayland", "x11"]
+
+    version = "0.32"
+
+    default-features = false
+
+
+    [build-dependencies]
+
+    cfg_aliases = "0.2.1"
+
+
+    [dev-dependencies]
+
+    glam = "0.32.0"
+
+
+    [dev-dependencies.env_logger]
+
+    version = "0.11"
+
+    default-features = false
+
+
+    [dev-dependencies.naga]
+
+    features = ["wgsl-in", "termcolor"]
+
+    version = "29.0.0"
+
+    path = "./naga"
+
+
+    [dev-dependencies.winit]
+
+    version = "0.30.8"
+
+    features = ["android-native-activity"]
+
+    '
+  dest: cargo/vendor/wgpu-hal
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-hal
   dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/wgpu-types/wgpu-types-28.0.0.crate
-  sha256: e18308757e594ed2cd27dddbb16a139c42a683819d32a2e0b1b0167552f5840c
-  dest: cargo/vendor/wgpu-types-28.0.0
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-naga-bridge" "cargo/vendor/wgpu-naga-bridge"
 - type: inline
-  contents: '{"package": "e18308757e594ed2cd27dddbb16a139c42a683819d32a2e0b1b0167552f5840c",
-    "files": {}}'
-  dest: cargo/vendor/wgpu-types-28.0.0
+  contents: '[package]
+
+    name = "wgpu-naga-bridge"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Conversions between naga and wgpu-types. Part of the wgpu project"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    rust-version = "1.87"
+
+
+    [dependencies.naga]
+
+    version = "29.0.0"
+
+    path = "./naga"
+
+
+    [dependencies.wgpu-types]
+
+    version = "29.0.0"
+
+    path = "./wgpu-types"
+
+    default-features = false
+
+    '
+  dest: cargo/vendor/wgpu-naga-bridge
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-naga-bridge
+  dest-filename: .cargo-checksum.json
+- type: shell
+  commands:
+  - cp -r --reflink=auto "flatpak-cargo/git/wgpu-a466bc3/wgpu-types" "cargo/vendor/wgpu-types"
+- type: inline
+  contents: '[package]
+
+    name = "wgpu-types"
+
+    version = "29.0.0"
+
+    authors = ["gfx-rs developers"]
+
+    edition = "2021"
+
+    description = "Common types and utilities for wgpu, the cross-platform, safe,
+    pure-rust graphics API"
+
+    homepage = "https://wgpu.rs/"
+
+    repository = "https://github.com/gfx-rs/wgpu"
+
+    keywords = ["graphics"]
+
+    license = "MIT OR Apache-2.0"
+
+    rust-version = "1.87"
+
+
+    [package.metadata.docs.rs]
+
+    all-features = true
+
+    rustdoc-args = ["--cfg", "docsrs"]
+
+    targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc",
+    "wasm32-unknown-unknown"]
+
+
+    [lints.rust.unexpected_cfgs]
+
+    level = "warn"
+
+    check-cfg = ["cfg(web_sys_unstable_apis)"]
+
+
+    [lints.clippy]
+
+    std_instead_of_core = "warn"
+
+    std_instead_of_alloc = "warn"
+
+    alloc_instead_of_core = "warn"
+
+
+    [lib]
+
+
+    [features]
+
+    default = ["std"]
+
+    std = ["js-sys?/std", "web-sys?/std"]
+
+    strict_asserts = []
+
+    fragile-send-sync-non-atomic-wasm = []
+
+    serde = ["dep:serde", "bitflags/serde"]
+
+    counters = []
+
+    trace = ["std"]
+
+    web = ["dep:js-sys", "dep:web-sys"]
+
+
+    [dependencies]
+
+    bitflags = "2.9"
+
+    log = "0.4.29"
+
+
+    [dependencies.bytemuck]
+
+    features = ["derive", "extern_crate_alloc", "min_const_generics"]
+
+    version = "1.22"
+
+
+    [dependencies.raw-window-handle]
+
+    version = "0.6.2"
+
+    default-features = false
+
+
+    [dependencies.serde]
+
+    default-features = false
+
+    features = ["alloc", "derive"]
+
+    optional = true
+
+    version = "1.0.225"
+
+
+    [target."cfg(target_arch = \"wasm32\")".dependencies.js-sys]
+
+    optional = true
+
+    default-features = false
+
+    version = "0.3.85"
+
+
+    [target."cfg(target_arch = \"wasm32\")".dependencies.web-sys]
+
+    optional = true
+
+    default-features = false
+
+    features = ["ImageBitmap", "ImageData", "HtmlImageElement", "HtmlVideoElement",
+    "HtmlCanvasElement", "OffscreenCanvas", "VideoFrame"]
+
+    version = "0.3.85"
+
+
+    [dev-dependencies]
+
+    serde_json = "1.0.143"
+
+
+    [dev-dependencies.serde]
+
+    features = ["derive"]
+
+    version = "1.0.225"
+
+    default-features = false
+
+    '
+  dest: cargo/vendor/wgpu-types
+  dest-filename: Cargo.toml
+- type: inline
+  contents: '{"package": null, "files": {}}'
+  dest: cargo/vendor/wgpu-types
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -12957,16 +15057,6 @@
   contents: '{"package": "9bbb26405d8e919bc1547a5aa9abc95cbfa438f04844f5fdd9dc7596b748bf69",
     "files": {}}'
   dest: cargo/vendor/xml5ever-0.18.1
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/xmlparser/xmlparser-0.13.6.crate
-  sha256: 66fee0b777b0f5ac1c69bb06d361268faafa61cd4682ae064a171c16c433e9e4
-  dest: cargo/vendor/xmlparser-0.13.6
-- type: inline
-  contents: '{"package": "66fee0b777b0f5ac1c69bb06d361268faafa61cd4682ae064a171c16c433e9e4",
-    "files": {}}'
-  dest: cargo/vendor/xmlparser-0.13.6
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -14292,7 +16382,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/zlog" "cargo/vendor/zlog"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/zlog" "cargo/vendor/zlog"
 - type: inline
   contents: '[package]
 
@@ -14403,7 +16493,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/ztracing" "cargo/vendor/ztracing"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/ztracing" "cargo/vendor/ztracing"
 - type: inline
   contents: '[package]
 
@@ -14503,7 +16593,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/zed-e4b827a/crates/ztracing_macro" "cargo/vendor/ztracing_macro"
+  - cp -r --reflink=auto "flatpak-cargo/git/zed-5a47e98/crates/ztracing_macro" "cargo/vendor/ztracing_macro"
 - type: inline
   contents: '[package]
 
@@ -14636,7 +16726,16 @@
 
     replace-with = "vendored-sources"
 
-    rev = "19e95aaed1ff05a717ec487661bd981fa7aeb28b"
+    rev = "2f7c7445d8c55e4af95c2a22695184ea8df35a32"
+
+
+    [source."https://github.com/zed-industries/wgpu"]
+
+    git = "https://github.com/zed-industries/wgpu"
+
+    replace-with = "vendored-sources"
+
+    branch = "v29"
 
 
     [source."https://github.com/zed-industries/xim-rs"]
