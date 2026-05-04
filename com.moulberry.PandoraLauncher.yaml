@@ -40,8 +40,6 @@ modules:
       SCCACHE_DIR: /run/ccache/sccache/
       PANDORA_DISTRIBUTION: 'flathub'
   build-commands:
-# I am doing this because of rust slop :sob:
-  -  cp -r --reflink=auto "cargo/vendor/gpui-component-assets" "cargo/vendor/assets"
 # temp: remove valid subcategories because upstream tool that flatpak uses doesn't recognise them
   - desktop-file-edit --remove-category=GameTool --remove-category=LauncherStore package/flatpak/com.moulberry.PandoraLauncher.desktop
   - install -D package/flatpak/com.moulberry.PandoraLauncher.desktop -t /app/share/applications/
@@ -54,6 +52,5 @@ modules:
   sources:
   - type: git
     url: https://github.com/Moulberry/PandoraLauncher
-    tag: v4.1.0
-    commit: 89b9be3c49c55caa1d29c7bbe0fd862c0247c148
-  - generated/cargo-sources.yaml
+    tag: v5.0.2
+    commit: dcf7cb548ef2553ac27c965e26d244336c84ce37
