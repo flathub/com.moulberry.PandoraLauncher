@@ -1,6 +1,6 @@
 app-id: com.moulberry.PandoraLauncher
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
@@ -52,5 +52,5 @@ modules:
   sources:
   - type: git
     url: https://github.com/Moulberry/PandoraLauncher
-    tag: v5.5.2
-    commit: c2ef99e953c628226f65a5e8a4d3c7f13b0b5a6f
+    tag: v6.0.0
+    commit: d68d99652b310f71f14d2099267989b89c33a8e2
