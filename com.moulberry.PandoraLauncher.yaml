@@ -52,5 +52,5 @@ modules:
   sources:
   - type: git
     url: https://github.com/Moulberry/PandoraLauncher
-    tag: v5.3.1
-    commit: f3fd3073b23437b9d35681659e322ca0d783585d
+    tag: v6.0.0
+    commit: d68d99652b310f71f14d2099267989b89c33a8e2
