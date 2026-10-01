@@ -14,7 +14,7 @@ finish-args:
 - --share=ipc
 
 modules:
-- name: sccache #Taken from https://github.com/flathub/chat.delta.desktop, updated to use newest sccache lol
+- name: sccache # Taken from https://github.com/flathub/chat.delta.desktop, updated to use newest sccache lol
   buildsystem: simple
   build-commands:
   - install -Dma+rwx sccache /app/bin/sccache
@@ -41,7 +41,7 @@ modules:
       SCCACHE_DIR: /run/ccache/sccache/
       PANDORA_DISTRIBUTION: 'flathub'
   build-commands:
-# temp: remove valid subcategories because upstream tool that flatpak uses doesn't recognise them
+  # temp: remove valid subcategories because upstream tool that flatpak uses doesn't recognise them
   - desktop-file-edit --remove-category=GameTool --remove-category=LauncherStore package/flatpak/com.moulberry.PandoraLauncher.desktop
   - install -D package/flatpak/com.moulberry.PandoraLauncher.desktop -t /app/share/applications/
   - install -D package/flatpak/com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo
@@ -55,3 +55,27 @@ modules:
     url: https://github.com/Moulberry/PandoraLauncher
     tag: v6.0.0
     commit: d68d99652b310f71f14d2099267989b89c33a8e2
+# Vendored from firejail, used temporarily to fix quickplay trying to use sandboxing (flatpak-spawn support is planned)
+- name: fbwrap
+  sources:
+    - type: file
+      path: vendor/fbwrap/main.c
+    - type: file
+      path: vendor/fbwrap/common.h
+  buildsystem: simple
+  build-commands:
+    - gcc main.c -o bwrap
+    - mv bwrap /app/bin
+- name: xdg-dbus-proxy
+  buildsystem: meson
+  config-opts:
+    - -Dman=disabled
+    - -Dtests=false
+  sources:
+    - type: git
+      url: https://github.com/flatpak/xdg-dbus-proxy
+      commit: f0fe358bb3a864a722f348cb942f30a29aafb9b2
+      tag: 0.1.8
+      x-checker-data:
+        type: git
+        url-template: $version
