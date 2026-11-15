@@ -3,55 +3,60 @@ runtime: org.freedesktop.Platform
 runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-- org.freedesktop.Sdk.Extension.rust-stable
+  - org.freedesktop.Sdk.Extension.rust-stable
 command: pandora_launcher
+
 finish-args:
-- --socket=pulseaudio
-- --socket=fallback-x11
-- --socket=wayland
-- --share=network
-- --device=dri
-- --share=ipc
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
+  - --device=dri
 
 modules:
-- name: sccache #Taken from https://github.com/flathub/chat.delta.desktop, updated to use newest sccache lol
-  buildsystem: simple
-  build-commands:
-  - install -Dma+rwx sccache /app/bin/sccache
-  cleanup:
-  - /bin/sccache
-  sources:
-  - type: archive
-    url: https://github.com/mozilla/sccache/releases/download/v0.13.0/sccache-v0.13.0-x86_64-unknown-linux-musl.tar.gz
-    sha256: 0f57d80d0036967bc06b8391dcf4b527a6837187de454b55222ce4e0d5e19d0a
-    only-arches: ["x86_64"]
-  - type: archive
-    url: https://github.com/mozilla/sccache/releases/download/v0.13.0/sccache-v0.13.0-aarch64-unknown-linux-musl.tar.gz
-    sha256: 1bbbd570aa957db85c1e7c3fbc790f7766d4406347371b884515ed723ac03086
-    only-arches: ["aarch64"]
-- "xrandr.yml"
-- name: PandoraLauncher
-  buildsystem: simple
-  build-options:
-    append-path: /usr/lib/sdk/rust-stable/bin
-    env:
-      CARGO_HOME: /run/build/PandoraLauncher/cargo
-      CARGO_NET_OFFLINE: 'true'
-      RUSTC_WRAPPER: /app/bin/sccache
-      SCCACHE_DIR: /run/ccache/sccache/
-      PANDORA_DISTRIBUTION: 'flathub'
-  build-commands:
-# temp: remove valid subcategories because upstream tool that flatpak uses doesn't recognise them
-  - desktop-file-edit --remove-category=GameTool --remove-category=LauncherStore package/flatpak/com.moulberry.PandoraLauncher.desktop
-  - install -D package/flatpak/com.moulberry.PandoraLauncher.desktop -t /app/share/applications/
-  - install -D package/flatpak/com.moulberry.PandoraLauncher.metainfo.xml -t /app/share/metainfo
-  - cp assets/icons/pandora.svg com.moulberry.PandoraLauncher.svg
-  - install -D com.moulberry.PandoraLauncher.svg -t /app/share/icons/hicolor/scalable/apps/
-  - cargo --offline fetch --manifest-path Cargo.toml --verbose
-  - cargo build --offline --release
-  - install -Dm755 target/release/pandora_launcher -t /app/bin
-  sources:
-  - type: git
-    url: https://github.com/Moulberry/PandoraLauncher
-    tag: v6.0.0
-    commit: d68d99652b310f71f14d2099267989b89c33a8e2
+  - name: sccache
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 sccache /app/bin/sccache
+    cleanup:
+      - /bin/sccache
+    sources:
+      - type: archive
+        url: https://github.com/mozilla/sccache/releases/download/v0.13.0/sccache-v0.13.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 0f57d80d0036967bc06b8391dcf4b527a6837187de454b55222ce4e0d5e19d0a
+        only-arches: [x86_64]
+      - type: archive
+        url: https://github.com/mozilla/sccache/releases/download/v0.13.0/sccache-v0.13.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 1bbbd570aa957db85c1e7c3fbc790f7766d4406347371b884515ed723ac03086
+        only-arches: [aarch64]
+
+  - xrandr.yml
+
+  - name: PandoraLauncher
+    buildsystem: simple
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      env:
+        CARGO_HOME: /run/build/PandoraLauncher/cargo
+        CARGO_NET_OFFLINE: 'true'
+        RUSTC_WRAPPER: /app/bin/sccache
+        SCCACHE_DIR: /run/ccache/sccache/
+        PANDORA_DISTRIBUTION: flathub
+        PANDORA_RELEASE_VERSION: '6.0.0'
+        GITHUB_REPOSITORY_URL: 'https://github.com/Moulberry/PandoraLauncher'
+    build-commands:
+      # Upstream desktop categories are not all recognized by the Flatpak validator.
+      - desktop-file-edit --remove-category=GameTool --remove-category=LauncherStore package/flatpak/com.moulberry.PandoraLauncher.desktop
+      - install -Dm644 package/flatpak/com.moulberry.PandoraLauncher.desktop /app/share/applications/com.moulberry.PandoraLauncher.desktop
+      - install -Dm644 package/flatpak/com.moulberry.PandoraLauncher.metainfo.xml /app/share/metainfo/com.moulberry.PandoraLauncher.metainfo.xml
+      - install -Dm644 assets/icons/pandora.svg /app/share/icons/hicolor/scalable/apps/com.moulberry.PandoraLauncher.svg
+      - cargo build --offline --release --locked
+      - install -Dm755 target/release/pandora_launcher /app/bin/pandora_launcher
+    sources:
+      - type: git
+        url: https://github.com/Moulberry/PandoraLauncher.git
+        tag: v6.0.0
+        commit: d68d99652b310f71f14d2099267989b89c33a8e2
+      - type: patch
+        path: appstream-release.patch
