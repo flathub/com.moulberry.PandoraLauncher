@@ -1,4 +1,3 @@
-# Taken from https://github.com/flathub/com.modrinth.ModrinthApp/blob/011b09b0f118a8bf0bca5b1cadce233ca35d4782/modules/xrandr.yml
 name: xrandr
 buildsystem: autotools
 sources:

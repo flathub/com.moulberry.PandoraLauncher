@@ -1,5 +1,4 @@
-generated/.temp
-UNTIL_LATER
-.flatpak-builder
-build
-repo
+.flatpak-builder/
+build/
+repo/
+*.flatpak
